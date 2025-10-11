@@ -1,0 +1,324 @@
+# ============================================================================
+# CONFIGURACIÓN - Sistema de Temporal Action Detection
+# ============================================================================
+# Configuración centralizada para todo el sistema
+# ============================================================================
+
+# ====================
+# MODELO
+# ====================
+model:
+  # Backbone para feature extraction
+  # Opciones: 'video_swin', 'timesformer', 'slowfast', 'i3d'
+  backbone: "video_swin"
+
+  # Configuración del backbone
+  backbone_config:
+    pretrained: true # Usar pesos pre-entrenados de Kinetics
+    freeze_bn: false # Congelar Batch Normalization
+    freeze_backbone: false # Congelar backbone (solo entrenar detection head)
+    feature_dim: 768 # Dimensión de features (768 para Swin-B, 384 para Swin-S)
+
+  # Número de clases de señas
+  num_classes: 24 # Ajustar según tu dataset
+
+  # Configuración de detección temporal
+  detection:
+    num_proposals: 100 # Número máximo de proposals por video
+    proposal_lengths: [8, 16, 32, 64] # Multi-scale temporal proposals (en frames)
+    feature_pyramid: true # Usar feature pyramid temporal
+    num_heads: 8 # Attention heads en detection head
+    hidden_dim: 512 # Dimensión oculta en detection head
+
+  # Boundary detection
+  boundary:
+    regression: true # Refinar boundaries con regresión
+    num_layers: 3 # Capas en boundary detector
+    kernel_size: 3 # Tamaño de kernel temporal
+
+  # Classification head
+  classifier:
+    num_layers: 2 # Capas FC en classifier
+    hidden_dim: 512
+    dropout: 0.3
+    activation: "gelu" # 'relu', 'gelu', 'swish'
+
+# ====================
+# DATOS
+# ====================
+data:
+  # Directorios
+  videos_dir: "../5 steps/videos" # Ruta a videos
+  annotations_dir: "data/annotations" # Anotaciones temporales
+  cache_dir: "data/cache" # Cache de features
+
+  # Procesamiento de video
+  clip_length: 64 # Número de frames por clip
+  sampling_rate: 2 # Tomar 1 frame cada N frames
+  input_size: 224 # Tamaño de imagen (224x224)
+
+  # Train/Val/Test split
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+
+  # Data loading
+  num_workers: 8 # Threads para cargar datos
+  prefetch_factor: 2
+  pin_memory: true # Pin memory para GPU
+  persistent_workers: true
+
+# ====================
+# AUGMENTATION
+# ====================
+augmentation:
+  # Augmentation espacial (aplicado a frames)
+  spatial:
+    random_crop: true
+    crop_size: 224
+    random_flip: true # Horizontal flip
+    color_jitter:
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
+      hue: 0.1
+    random_rotation: 10 # Grados
+    random_scale: [0.9, 1.1] # Rango de escala
+
+  # Augmentation temporal
+  temporal:
+    random_clip: true # Clip aleatorio de video largo
+    temporal_jitter: 0.1 # Jitter en timestamps
+    speed_perturbation: [0.9, 1.1] # Cambio de velocidad
+    frame_dropout: 0.0 # Probabilidad de drop frame (0.0-0.2)
+    temporal_crop: true # Crop temporal aleatorio
+
+  # Mixup / CutMix (avanzado)
+  mixup:
+    enabled: false
+    alpha: 0.2
+
+  # Test-time augmentation
+  tta:
+    enabled: false
+    num_clips: 3 # Número de clips por video en test
+
+# ====================
+# ENTRENAMIENTO
+# ====================
+training:
+  # Configuración básica
+  epochs: 100
+  batch_size: 8 # Ajustar según VRAM
+  gradient_accumulation_steps: 1 # Simular batch más grande
+
+  # Optimizer
+  optimizer: "adamw" # 'adam', 'adamw', 'sgd'
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  momentum: 0.9 # Solo para SGD
+  betas: [0.9, 0.999] # Solo para Adam/AdamW
+
+  # Learning rate scheduler
+  scheduler:
+    type: "cosine" # 'cosine', 'step', 'multistep', 'plateau'
+    warmup_epochs: 5
+    min_lr: 0.000001
+    # Para step/multistep
+    step_size: 30
+    gamma: 0.1
+    milestones: [60, 90]
+
+  # Mixed precision training
+  mixed_precision: true # FP16/BF16
+  grad_clip: 1.0 # Gradient clipping
+
+  # Early stopping
+  early_stopping:
+    enabled: true
+    patience: 15 # Epochs sin mejora
+    min_delta: 0.001
+    metric: "mAP_0.5" # Métrica a monitorear
+
+  # Checkpointing
+  save_every: 5 # Guardar cada N epochs
+  save_best: true # Guardar mejor modelo
+  keep_last_n: 3 # Mantener últimos N checkpoints
+
+# ====================
+# LOSS FUNCTIONS
+# ====================
+loss:
+  # Pesos de diferentes losses
+  weights:
+    classification: 1.0 # Classification loss
+    boundary: 1.0 # Boundary detection loss
+    regression: 0.5 # Boundary regression loss
+    iou: 0.3 # IoU loss
+
+  # Configuración de classification loss
+  classification:
+    type: "focal" # 'ce' (cross-entropy), 'focal', 'label_smoothing'
+    focal_alpha: 0.25
+    focal_gamma: 2.0
+    label_smoothing: 0.1
+
+  # Configuración de boundary loss
+  boundary:
+    type: "bce" # 'bce' (binary cross-entropy), 'dice'
+    pos_weight: 2.0 # Peso para positivos (boundaries son raros)
+
+  # IoU loss para proposals
+  iou:
+    type: "giou" # 'iou', 'giou', 'diou'
+
+# ====================
+# DETECCIÓN
+# ====================
+detection:
+  # Thresholds
+  confidence_threshold: 0.7 # Confianza mínima
+  iou_threshold: 0.5 # Para NMS
+
+  # NMS (Non-Maximum Suppression)
+  nms:
+    method: "soft" # 'hard', 'soft', 'gaussian'
+    sigma: 0.5 # Para soft-NMS
+    top_k: 100 # Mantener top-K detecciones
+
+  # Proposals
+  min_proposal_length: 8 # Frames mínimos
+  max_proposal_length: 128 # Frames máximos
+
+  # Refinamiento
+  boundary_refinement: true
+  confidence_calibration: true
+
+# ====================
+# STREAMING
+# ====================
+streaming:
+  # Buffer configuration
+  buffer_size: 128 # Frames en buffer
+  stride: 8 # Frames entre procesamiento
+  overlap: 16 # Overlap entre clips
+
+  # Performance
+  latency_target: 50 # ms - latencia objetivo
+  batch_inference: true # Procesar múltiples clips en batch
+
+  # Smoothing temporal
+  smoothing:
+    enabled: true
+    method: "kalman" # 'moving_average', 'kalman', 'exponential'
+    window_size: 5
+
+  # Tracking
+  tracking:
+    enabled: true
+    max_age: 30 # Frames máximos sin detección
+    min_hits: 3 # Detecciones mínimas para confirmar
+
+# ====================
+# EVALUACIÓN
+# ====================
+evaluation:
+  # Métricas a calcular
+  metrics:
+    - "mAP_0.5"
+    - "mAP_0.75"
+    - "mAP_0.5:0.95"
+    - "temporal_iou"
+    - "precision"
+    - "recall"
+    - "f1_score"
+
+  # IoU thresholds para mAP
+  iou_thresholds: [0.5, 0.75, 0.9, 0.95]
+
+  # Visualización
+  visualize_results: true
+  save_predictions: true
+  generate_report: true
+
+# ====================
+# LOGGING & MONITORING
+# ====================
+logging:
+  # Directorio de logs
+  log_dir: "logs"
+
+  # TensorBoard
+  tensorboard:
+    enabled: true
+    log_dir: "runs/tad_training"
+    log_every_n_steps: 10
+    log_images: true
+    log_videos: true # Loggear videos de ejemplo
+
+  # Weights & Biases (opcional)
+  wandb:
+    enabled: false
+    project: "sign_language_tad"
+    entity: null # Tu username de W&B
+    name: null # Nombre del run (auto-generado si null)
+
+  # Console logging
+  console:
+    level: "INFO" # 'DEBUG', 'INFO', 'WARNING', 'ERROR'
+    format: "rich" # 'simple', 'rich'
+
+  # Checkpoints
+  checkpoint_dir: "checkpoints"
+
+  # Results
+  results_dir: "results"
+
+# ====================
+# HARDWARE
+# ====================
+hardware:
+  # GPU
+  device: "cuda" # 'cuda', 'cpu', 'cuda:0', 'cuda:1'
+  multi_gpu: false # DataParallel
+  gpu_ids: [0] # IDs de GPUs a usar
+
+  # Distributed training (avanzado)
+  distributed:
+    enabled: false
+    backend: "nccl" # 'nccl', 'gloo'
+    world_size: 1
+    rank: 0
+
+  # Optimizaciones
+  cudnn_benchmark: true # Acelera training
+  deterministic: false # Reproducibilidad (más lento)
+
+  # Memory
+  empty_cache_every_n_steps: 100 # Limpiar cache GPU
+
+# ====================
+# REPRODUCIBILIDAD
+# ====================
+seed: 42 # Random seed para reproducibilidad
+
+# ====================
+# DEBUGGING
+# ====================
+debug:
+  enabled: false # Modo debug (más logging)
+  detect_anomaly: false # Detectar NaN/Inf (lento)
+  profile: false # Profiling de performance
+  save_intermediate: false # Guardar features intermedias
+
+# ====================
+# PATHS ABSOLUTOS (auto-generados)
+# ====================
+# No modificar - se generan automáticamente
+paths:
+  root: null
+  data: null
+  models: null
+  checkpoints: null
+  logs: null
+  results: null
