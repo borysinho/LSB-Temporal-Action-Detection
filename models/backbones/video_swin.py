@@ -528,7 +528,7 @@ class VideoSwinTransformer(nn.Module):
                 drop=drop_rate,
                 attn_drop=attn_drop_rate,
                 drop_path=dpr[sum(depths[:i_layer]):sum(depths[:i_layer + 1])],
-                downsample=PatchMerging if i_layer < self.num_layers - 1 else None
+                downsample=PatchMerging(int(embed_dim * 2 ** i_layer)) if i_layer < self.num_layers - 1 else None
             )
             self.layers.append(layer)
         

@@ -135,8 +135,12 @@ class TADTrainer:
         for batch_idx, batch in enumerate(self.train_loader):
             # Mover datos a device
             frames = batch['frames'].to(self.device)
-            targets = {k: v.to(self.device) if isinstance(v, torch.Tensor) else v 
-                      for k, v in batch['targets'].items()}
+            targets = batch['targets']
+            
+            # Mover targets a device
+            for k, v in targets.items():
+                if isinstance(v, torch.Tensor):
+                    targets[k] = v.to(self.device)
             
             # Forward pass con autocast si usamos AMP
             if self.use_amp:

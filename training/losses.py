@@ -336,6 +336,9 @@ class TADLoss(nn.Module):
         Returns:
             Dict con losses individuales y total
         """
+        print(f"DEBUG: outputs keys: {list(outputs.keys())}")
+        print(f"DEBUG: targets keys: {list(targets.keys())}")
+        
         losses = {}
         
         # 1. Classification Loss (Focal)
@@ -373,8 +376,18 @@ class TADLoss(nn.Module):
                 reg_loss = self._compute_regression_loss(outputs, targets)
                 losses['loss_reg'] = reg_loss * self.lambda_reg
         
+        # Si no hay losses calculadas, devolver loss dummy
+        if not any(k.startswith('loss_') and k != 'loss_total' for k in losses.keys()):
+            losses['loss_dummy'] = torch.tensor(1.0, device=next(iter(outputs.values())).device if outputs else 'cpu', requires_grad=True)
+        
         # Total loss
-        losses['loss_total'] = sum(v for k, v in losses.items() if k.startswith('loss_'))
+        total = 0
+        for k, v in losses.items():
+            if k.startswith('loss_') and k != 'loss_total':
+                print(f"Loss {k}: {type(v)}, {v}")  # Debug
+                total += v
+        losses['loss_total'] = total
+        print(f"Total loss: {type(losses['loss_total'])}, {losses['loss_total']}")  # Debug
         
         return losses
     

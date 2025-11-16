@@ -1,0 +1,3162 @@
+[
+  {
+    "video_id": "ABECEDARIO",
+    "video_path": "ABECEDARIO.mp4",
+    "duration": 128.66186666666667,
+    "fps": 29.97002997002997,
+    "total_frames": 3856,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      },
+      {
+        "label": "abecedario",
+        "class": "abecedario",
+        "class_id": 0,
+        "start_frame": 0,
+        "end_frame": 100,
+        "start_time": 0.0,
+        "end_time": 3.336666666666667
+      }
+    ]
+  },
+  {
+    "video_id": "TIEMPO",
+    "video_path": "TIEMPO.mp4",
+    "duration": 60.69396666666667,
+    "fps": 29.97002997002997,
+    "total_frames": 1819,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 0,
+        "end_frame": 71,
+        "start_time": 0.0,
+        "end_time": 2.3690333333333333
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 72,
+        "end_frame": 252,
+        "start_time": 2.4024,
+        "end_time": 8.4084
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 253,
+        "end_frame": 360,
+        "start_time": 8.441766666666666,
+        "end_time": 12.012
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 361,
+        "end_frame": 450,
+        "start_time": 12.045366666666666,
+        "end_time": 15.015
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 451,
+        "end_frame": 546,
+        "start_time": 15.048366666666666,
+        "end_time": 18.2182
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 547,
+        "end_frame": 654,
+        "start_time": 18.251566666666665,
+        "end_time": 21.8218
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 655,
+        "end_frame": 691,
+        "start_time": 21.855166666666666,
+        "end_time": 23.056366666666666
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 692,
+        "end_frame": 764,
+        "start_time": 23.089733333333335,
+        "end_time": 25.492133333333335
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 765,
+        "end_frame": 860,
+        "start_time": 25.5255,
+        "end_time": 28.695333333333334
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 861,
+        "end_frame": 963,
+        "start_time": 28.7287,
+        "end_time": 32.1321
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 964,
+        "end_frame": 1071,
+        "start_time": 32.16546666666667,
+        "end_time": 35.7357
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 1072,
+        "end_frame": 1149,
+        "start_time": 35.76906666666667,
+        "end_time": 38.338300000000004
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 1150,
+        "end_frame": 1228,
+        "start_time": 38.37166666666667,
+        "end_time": 40.974266666666665
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 1229,
+        "end_frame": 1312,
+        "start_time": 41.00763333333333,
+        "end_time": 43.77706666666667
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 1313,
+        "end_frame": 1410,
+        "start_time": 43.810433333333336,
+        "end_time": 47.047000000000004
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 1411,
+        "end_frame": 1517,
+        "start_time": 47.08036666666667,
+        "end_time": 50.61723333333333
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 1518,
+        "end_frame": 1668,
+        "start_time": 50.650600000000004,
+        "end_time": 55.6556
+      },
+      {
+        "label": "tiempo",
+        "class": "tiempo",
+        "class_id": 17,
+        "start_frame": 1669,
+        "end_frame": 1818,
+        "start_time": 55.688966666666666,
+        "end_time": 60.6606
+      }
+    ]
+  },
+  {
+    "video_id": "SALUDOS",
+    "video_path": "SALUDOS.mp4",
+    "duration": 96.6966,
+    "fps": 29.97002997002997,
+    "total_frames": 2898,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 0,
+        "end_frame": 71,
+        "start_time": 0.0,
+        "end_time": 2.3690333333333333
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 72,
+        "end_frame": 251,
+        "start_time": 2.4024,
+        "end_time": 8.375033333333333
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 252,
+        "end_frame": 360,
+        "start_time": 8.4084,
+        "end_time": 12.012
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 361,
+        "end_frame": 444,
+        "start_time": 12.045366666666666,
+        "end_time": 14.8148
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 445,
+        "end_frame": 478,
+        "start_time": 14.848166666666668,
+        "end_time": 15.949266666666666
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 479,
+        "end_frame": 569,
+        "start_time": 15.982633333333334,
+        "end_time": 18.985633333333332
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 570,
+        "end_frame": 606,
+        "start_time": 19.019000000000002,
+        "end_time": 20.220200000000002
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 607,
+        "end_frame": 665,
+        "start_time": 20.253566666666668,
+        "end_time": 22.188833333333335
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 666,
+        "end_frame": 752,
+        "start_time": 22.2222,
+        "end_time": 25.091733333333334
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 753,
+        "end_frame": 806,
+        "start_time": 25.1251,
+        "end_time": 26.893533333333334
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 807,
+        "end_frame": 889,
+        "start_time": 26.9269,
+        "end_time": 29.662966666666666
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 890,
+        "end_frame": 935,
+        "start_time": 29.696333333333335,
+        "end_time": 31.197833333333335
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 936,
+        "end_frame": 1017,
+        "start_time": 31.2312,
+        "end_time": 33.9339
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1018,
+        "end_frame": 1063,
+        "start_time": 33.96726666666667,
+        "end_time": 35.46876666666667
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1064,
+        "end_frame": 1149,
+        "start_time": 35.50213333333333,
+        "end_time": 38.338300000000004
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1150,
+        "end_frame": 1270,
+        "start_time": 38.37166666666667,
+        "end_time": 42.37566666666667
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1271,
+        "end_frame": 1385,
+        "start_time": 42.40903333333333,
+        "end_time": 46.212833333333336
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1386,
+        "end_frame": 1499,
+        "start_time": 46.2462,
+        "end_time": 50.01663333333333
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1500,
+        "end_frame": 1541,
+        "start_time": 50.050000000000004,
+        "end_time": 51.418033333333334
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1542,
+        "end_frame": 1620,
+        "start_time": 51.4514,
+        "end_time": 54.054
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1621,
+        "end_frame": 1710,
+        "start_time": 54.08736666666667,
+        "end_time": 57.057
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1711,
+        "end_frame": 1825,
+        "start_time": 57.09036666666667,
+        "end_time": 60.89416666666667
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1826,
+        "end_frame": 1939,
+        "start_time": 60.927533333333336,
+        "end_time": 64.69796666666667
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 1940,
+        "end_frame": 2060,
+        "start_time": 64.73133333333334,
+        "end_time": 68.73533333333333
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2061,
+        "end_frame": 2156,
+        "start_time": 68.7687,
+        "end_time": 71.93853333333334
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2157,
+        "end_frame": 2241,
+        "start_time": 71.9719,
+        "end_time": 74.7747
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2242,
+        "end_frame": 2281,
+        "start_time": 74.80806666666666,
+        "end_time": 76.10936666666667
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2282,
+        "end_frame": 2348,
+        "start_time": 76.14273333333334,
+        "end_time": 78.34493333333333
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2349,
+        "end_frame": 2383,
+        "start_time": 78.3783,
+        "end_time": 79.51276666666666
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2384,
+        "end_frame": 2452,
+        "start_time": 79.54613333333333,
+        "end_time": 81.81506666666667
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2453,
+        "end_frame": 2488,
+        "start_time": 81.84843333333333,
+        "end_time": 83.01626666666667
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2489,
+        "end_frame": 2595,
+        "start_time": 83.04963333333333,
+        "end_time": 86.5865
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2596,
+        "end_frame": 2747,
+        "start_time": 86.61986666666667,
+        "end_time": 91.65823333333333
+      },
+      {
+        "label": "saludos",
+        "class": "saludos",
+        "class_id": 15,
+        "start_frame": 2748,
+        "end_frame": 2897,
+        "start_time": 91.69160000000001,
+        "end_time": 96.66323333333334
+      }
+    ]
+  },
+  {
+    "video_id": "ALIMENTOS",
+    "video_path": "ALIMENTOS.mp4",
+    "duration": 73.10636666666667,
+    "fps": 29.97002997002997,
+    "total_frames": 2191,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 0,
+        "end_frame": 362,
+        "start_time": 0.0,
+        "end_time": 12.078733333333334
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 363,
+        "end_frame": 485,
+        "start_time": 12.1121,
+        "end_time": 16.182833333333335
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 486,
+        "end_frame": 589,
+        "start_time": 16.2162,
+        "end_time": 19.652966666666668
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 590,
+        "end_frame": 697,
+        "start_time": 19.686333333333334,
+        "end_time": 23.256566666666668
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 698,
+        "end_frame": 816,
+        "start_time": 23.289933333333334,
+        "end_time": 27.2272
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 817,
+        "end_frame": 924,
+        "start_time": 27.260566666666666,
+        "end_time": 30.8308
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 925,
+        "end_frame": 1023,
+        "start_time": 30.864166666666666,
+        "end_time": 34.134100000000004
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1024,
+        "end_frame": 1130,
+        "start_time": 34.16746666666667,
+        "end_time": 37.70433333333333
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1131,
+        "end_frame": 1249,
+        "start_time": 37.737700000000004,
+        "end_time": 41.67496666666667
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1250,
+        "end_frame": 1354,
+        "start_time": 41.708333333333336,
+        "end_time": 45.178466666666665
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1355,
+        "end_frame": 1472,
+        "start_time": 45.21183333333333,
+        "end_time": 49.11573333333333
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1473,
+        "end_frame": 1584,
+        "start_time": 49.149100000000004,
+        "end_time": 52.8528
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1585,
+        "end_frame": 1680,
+        "start_time": 52.88616666666667,
+        "end_time": 56.056000000000004
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1681,
+        "end_frame": 1787,
+        "start_time": 56.08936666666667,
+        "end_time": 59.62623333333333
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1788,
+        "end_frame": 1885,
+        "start_time": 59.6596,
+        "end_time": 62.896166666666666
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 1886,
+        "end_frame": 2040,
+        "start_time": 62.92953333333333,
+        "end_time": 68.068
+      },
+      {
+        "label": "alimentos",
+        "class": "alimentos",
+        "class_id": 1,
+        "start_frame": 2041,
+        "end_frame": 2190,
+        "start_time": 68.10136666666666,
+        "end_time": 73.07300000000001
+      }
+    ]
+  },
+  {
+    "video_id": "FRUTAS",
+    "video_path": "FRUTAS.mp4",
+    "duration": 48.615233333333336,
+    "fps": 29.97002997002997,
+    "total_frames": 1457,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 0,
+        "end_frame": 361,
+        "start_time": 0.0,
+        "end_time": 12.045366666666666
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 362,
+        "end_frame": 445,
+        "start_time": 12.078733333333334,
+        "end_time": 14.848166666666668
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 446,
+        "end_frame": 475,
+        "start_time": 14.881533333333334,
+        "end_time": 15.849166666666667
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 476,
+        "end_frame": 553,
+        "start_time": 15.882533333333333,
+        "end_time": 18.451766666666668
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 554,
+        "end_frame": 584,
+        "start_time": 18.485133333333334,
+        "end_time": 19.486133333333335
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 585,
+        "end_frame": 656,
+        "start_time": 19.5195,
+        "end_time": 21.888533333333335
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 657,
+        "end_frame": 765,
+        "start_time": 21.9219,
+        "end_time": 25.5255
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 766,
+        "end_frame": 885,
+        "start_time": 25.558866666666667,
+        "end_time": 29.529500000000002
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 886,
+        "end_frame": 1018,
+        "start_time": 29.562866666666668,
+        "end_time": 33.96726666666667
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 1019,
+        "end_frame": 1149,
+        "start_time": 34.00063333333333,
+        "end_time": 38.338300000000004
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 1150,
+        "end_frame": 1306,
+        "start_time": 38.37166666666667,
+        "end_time": 43.57686666666667
+      },
+      {
+        "label": "frutas",
+        "class": "frutas",
+        "class_id": 8,
+        "start_frame": 1307,
+        "end_frame": 1456,
+        "start_time": 43.61023333333333,
+        "end_time": 48.58186666666667
+      }
+    ]
+  },
+  {
+    "video_id": "CUERPO HUMANO",
+    "video_path": "CUERPO HUMANO.mp4",
+    "duration": 72.13873333333333,
+    "fps": 29.97002997002997,
+    "total_frames": 2162,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 361,
+        "end_frame": 402,
+        "start_time": 12.045366666666666,
+        "end_time": 13.413400000000001
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 403,
+        "end_frame": 546,
+        "start_time": 13.446766666666667,
+        "end_time": 18.2182
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 547,
+        "end_frame": 679,
+        "start_time": 18.251566666666665,
+        "end_time": 22.655966666666668
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 680,
+        "end_frame": 812,
+        "start_time": 22.689333333333334,
+        "end_time": 27.093733333333333
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 813,
+        "end_frame": 848,
+        "start_time": 27.127100000000002,
+        "end_time": 28.294933333333333
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 849,
+        "end_frame": 993,
+        "start_time": 28.328300000000002,
+        "end_time": 33.1331
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 994,
+        "end_frame": 1143,
+        "start_time": 33.166466666666665,
+        "end_time": 38.1381
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1144,
+        "end_frame": 1261,
+        "start_time": 38.17146666666667,
+        "end_time": 42.07536666666667
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1262,
+        "end_frame": 1294,
+        "start_time": 42.10873333333333,
+        "end_time": 43.17646666666667
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1295,
+        "end_frame": 1331,
+        "start_time": 43.209833333333336,
+        "end_time": 44.411033333333336
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1332,
+        "end_frame": 1433,
+        "start_time": 44.4444,
+        "end_time": 47.814433333333334
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1434,
+        "end_frame": 1559,
+        "start_time": 47.8478,
+        "end_time": 52.018633333333334
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1560,
+        "end_frame": 1643,
+        "start_time": 52.052,
+        "end_time": 54.82143333333333
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1644,
+        "end_frame": 1689,
+        "start_time": 54.854800000000004,
+        "end_time": 56.356300000000005
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1690,
+        "end_frame": 1783,
+        "start_time": 56.38966666666667,
+        "end_time": 59.49276666666667
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1784,
+        "end_frame": 1861,
+        "start_time": 59.526133333333334,
+        "end_time": 62.09536666666667
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 1862,
+        "end_frame": 2011,
+        "start_time": 62.12873333333334,
+        "end_time": 67.10036666666667
+      },
+      {
+        "label": "cuerpo_humano",
+        "class": "cuerpo_humano",
+        "class_id": 5,
+        "start_frame": 2012,
+        "end_frame": 2161,
+        "start_time": 67.13373333333334,
+        "end_time": 72.10536666666667
+      }
+    ]
+  },
+  {
+    "video_id": "NATURALEZA",
+    "video_path": "NATURALEZA.mp4",
+    "duration": 109.74296666666667,
+    "fps": 29.97002997002997,
+    "total_frames": 3289,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 361,
+        "end_frame": 445,
+        "start_time": 12.045366666666666,
+        "end_time": 14.848166666666668
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 446,
+        "end_frame": 487,
+        "start_time": 14.881533333333334,
+        "end_time": 16.249566666666666
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 488,
+        "end_frame": 557,
+        "start_time": 16.282933333333332,
+        "end_time": 18.585233333333335
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 558,
+        "end_frame": 661,
+        "start_time": 18.6186,
+        "end_time": 22.055366666666668
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 662,
+        "end_frame": 764,
+        "start_time": 22.088733333333334,
+        "end_time": 25.492133333333335
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 765,
+        "end_frame": 800,
+        "start_time": 25.5255,
+        "end_time": 26.693333333333335
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 801,
+        "end_frame": 890,
+        "start_time": 26.7267,
+        "end_time": 29.696333333333335
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 891,
+        "end_frame": 999,
+        "start_time": 29.7297,
+        "end_time": 33.3333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1000,
+        "end_frame": 1029,
+        "start_time": 33.36666666666667,
+        "end_time": 34.3343
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1030,
+        "end_frame": 1113,
+        "start_time": 34.367666666666665,
+        "end_time": 37.137100000000004
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1114,
+        "end_frame": 1154,
+        "start_time": 37.17046666666667,
+        "end_time": 38.50513333333333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1155,
+        "end_frame": 1228,
+        "start_time": 38.5385,
+        "end_time": 40.974266666666665
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1229,
+        "end_frame": 1361,
+        "start_time": 41.00763333333333,
+        "end_time": 45.41203333333333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1362,
+        "end_frame": 1391,
+        "start_time": 45.4454,
+        "end_time": 46.41303333333333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1392,
+        "end_frame": 1466,
+        "start_time": 46.446400000000004,
+        "end_time": 48.915533333333336
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1467,
+        "end_frame": 1499,
+        "start_time": 48.9489,
+        "end_time": 50.01663333333333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1500,
+        "end_frame": 1577,
+        "start_time": 50.050000000000004,
+        "end_time": 52.619233333333334
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1578,
+        "end_frame": 1720,
+        "start_time": 52.6526,
+        "end_time": 57.39066666666667
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1721,
+        "end_frame": 1752,
+        "start_time": 57.424033333333334,
+        "end_time": 58.458400000000005
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1753,
+        "end_frame": 1825,
+        "start_time": 58.49176666666667,
+        "end_time": 60.89416666666667
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1826,
+        "end_frame": 1864,
+        "start_time": 60.927533333333336,
+        "end_time": 62.19546666666667
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1865,
+        "end_frame": 1951,
+        "start_time": 62.228833333333334,
+        "end_time": 65.09836666666666
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1952,
+        "end_frame": 1987,
+        "start_time": 65.13173333333333,
+        "end_time": 66.29956666666666
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 1988,
+        "end_frame": 2058,
+        "start_time": 66.33293333333333,
+        "end_time": 68.6686
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2059,
+        "end_frame": 2156,
+        "start_time": 68.70196666666666,
+        "end_time": 71.93853333333334
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2157,
+        "end_frame": 2199,
+        "start_time": 71.9719,
+        "end_time": 73.3733
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2200,
+        "end_frame": 2362,
+        "start_time": 73.40666666666667,
+        "end_time": 78.81206666666667
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2363,
+        "end_frame": 2404,
+        "start_time": 78.84543333333333,
+        "end_time": 80.21346666666666
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2405,
+        "end_frame": 2476,
+        "start_time": 80.24683333333333,
+        "end_time": 82.61586666666666
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2477,
+        "end_frame": 2516,
+        "start_time": 82.64923333333333,
+        "end_time": 83.95053333333334
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2517,
+        "end_frame": 2582,
+        "start_time": 83.9839,
+        "end_time": 86.15273333333333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2583,
+        "end_frame": 2615,
+        "start_time": 86.1861,
+        "end_time": 87.25383333333333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2616,
+        "end_frame": 2717,
+        "start_time": 87.2872,
+        "end_time": 90.65723333333334
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2718,
+        "end_frame": 2768,
+        "start_time": 90.6906,
+        "end_time": 92.35893333333334
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2769,
+        "end_frame": 2837,
+        "start_time": 92.3923,
+        "end_time": 94.66123333333333
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2838,
+        "end_frame": 2886,
+        "start_time": 94.69460000000001,
+        "end_time": 96.2962
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2887,
+        "end_frame": 2979,
+        "start_time": 96.32956666666666,
+        "end_time": 99.3993
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 2980,
+        "end_frame": 3138,
+        "start_time": 99.43266666666666,
+        "end_time": 104.7046
+      },
+      {
+        "label": "naturaleza",
+        "class": "naturaleza",
+        "class_id": 11,
+        "start_frame": 3139,
+        "end_frame": 3288,
+        "start_time": 104.73796666666667,
+        "end_time": 109.70960000000001
+      }
+    ]
+  },
+  {
+    "video_id": "CALENDARIO",
+    "video_path": "CALENDARIO.mp4",
+    "duration": 77.44403333333334,
+    "fps": 29.97002997002997,
+    "total_frames": 2321,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 361,
+        "end_frame": 486,
+        "start_time": 12.045366666666666,
+        "end_time": 16.2162
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 487,
+        "end_frame": 607,
+        "start_time": 16.249566666666666,
+        "end_time": 20.253566666666668
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 608,
+        "end_frame": 733,
+        "start_time": 20.286933333333334,
+        "end_time": 24.457766666666668
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 734,
+        "end_frame": 872,
+        "start_time": 24.491133333333334,
+        "end_time": 29.095733333333335
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 873,
+        "end_frame": 977,
+        "start_time": 29.1291,
+        "end_time": 32.59923333333333
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 978,
+        "end_frame": 1119,
+        "start_time": 32.632600000000004,
+        "end_time": 37.3373
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1120,
+        "end_frame": 1223,
+        "start_time": 37.370666666666665,
+        "end_time": 40.807433333333336
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1224,
+        "end_frame": 1258,
+        "start_time": 40.8408,
+        "end_time": 41.97526666666667
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1259,
+        "end_frame": 1358,
+        "start_time": 42.008633333333336,
+        "end_time": 45.311933333333336
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1359,
+        "end_frame": 1391,
+        "start_time": 45.3453,
+        "end_time": 46.41303333333333
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1392,
+        "end_frame": 1505,
+        "start_time": 46.446400000000004,
+        "end_time": 50.216833333333334
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1506,
+        "end_frame": 1629,
+        "start_time": 50.2502,
+        "end_time": 54.3543
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1630,
+        "end_frame": 1764,
+        "start_time": 54.38766666666667,
+        "end_time": 58.8588
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1765,
+        "end_frame": 1885,
+        "start_time": 58.89216666666667,
+        "end_time": 62.896166666666666
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 1886,
+        "end_frame": 2012,
+        "start_time": 62.92953333333333,
+        "end_time": 67.13373333333334
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 2013,
+        "end_frame": 2168,
+        "start_time": 67.1671,
+        "end_time": 72.33893333333333
+      },
+      {
+        "label": "calendario",
+        "class": "calendario",
+        "class_id": 3,
+        "start_frame": 2169,
+        "end_frame": 2320,
+        "start_time": 72.3723,
+        "end_time": 77.41066666666667
+      }
+    ]
+  },
+  {
+    "video_id": "VERBOS",
+    "video_path": "VERBOS.mp4",
+    "duration": 131.9318,
+    "fps": 29.97002997002997,
+    "total_frames": 3954,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 0,
+        "end_frame": 71,
+        "start_time": 0.0,
+        "end_time": 2.3690333333333333
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 72,
+        "end_frame": 251,
+        "start_time": 2.4024,
+        "end_time": 8.375033333333333
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 252,
+        "end_frame": 360,
+        "start_time": 8.4084,
+        "end_time": 12.012
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 361,
+        "end_frame": 441,
+        "start_time": 12.045366666666666,
+        "end_time": 14.7147
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 442,
+        "end_frame": 473,
+        "start_time": 14.748066666666666,
+        "end_time": 15.782433333333334
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 474,
+        "end_frame": 583,
+        "start_time": 15.8158,
+        "end_time": 19.452766666666665
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 584,
+        "end_frame": 679,
+        "start_time": 19.486133333333335,
+        "end_time": 22.655966666666668
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 680,
+        "end_frame": 719,
+        "start_time": 22.689333333333334,
+        "end_time": 23.990633333333335
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 720,
+        "end_frame": 798,
+        "start_time": 24.024,
+        "end_time": 26.6266
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 799,
+        "end_frame": 829,
+        "start_time": 26.659966666666666,
+        "end_time": 27.660966666666667
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 830,
+        "end_frame": 903,
+        "start_time": 27.694333333333333,
+        "end_time": 30.1301
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 904,
+        "end_frame": 942,
+        "start_time": 30.163466666666668,
+        "end_time": 31.4314
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 943,
+        "end_frame": 1035,
+        "start_time": 31.464766666666666,
+        "end_time": 34.5345
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1036,
+        "end_frame": 1143,
+        "start_time": 34.56786666666667,
+        "end_time": 38.1381
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1144,
+        "end_frame": 1269,
+        "start_time": 38.17146666666667,
+        "end_time": 42.3423
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1270,
+        "end_frame": 1379,
+        "start_time": 42.37566666666667,
+        "end_time": 46.01263333333333
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1380,
+        "end_frame": 1486,
+        "start_time": 46.046,
+        "end_time": 49.58286666666667
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1487,
+        "end_frame": 1614,
+        "start_time": 49.616233333333334,
+        "end_time": 53.8538
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1615,
+        "end_frame": 1710,
+        "start_time": 53.887166666666666,
+        "end_time": 57.057
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1711,
+        "end_frame": 1795,
+        "start_time": 57.09036666666667,
+        "end_time": 59.893166666666666
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1796,
+        "end_frame": 1846,
+        "start_time": 59.92653333333333,
+        "end_time": 61.59486666666667
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1847,
+        "end_frame": 1946,
+        "start_time": 61.628233333333334,
+        "end_time": 64.93153333333333
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 1947,
+        "end_frame": 2060,
+        "start_time": 64.9649,
+        "end_time": 68.73533333333333
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2061,
+        "end_frame": 2175,
+        "start_time": 68.7687,
+        "end_time": 72.5725
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2176,
+        "end_frame": 2295,
+        "start_time": 72.60586666666667,
+        "end_time": 76.5765
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2296,
+        "end_frame": 2422,
+        "start_time": 76.60986666666666,
+        "end_time": 80.81406666666666
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2423,
+        "end_frame": 2548,
+        "start_time": 80.84743333333333,
+        "end_time": 85.01826666666666
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2549,
+        "end_frame": 2624,
+        "start_time": 85.05163333333333,
+        "end_time": 87.55413333333334
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2625,
+        "end_frame": 2658,
+        "start_time": 87.5875,
+        "end_time": 88.68860000000001
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2659,
+        "end_frame": 2772,
+        "start_time": 88.72196666666667,
+        "end_time": 92.4924
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2773,
+        "end_frame": 2892,
+        "start_time": 92.52576666666667,
+        "end_time": 96.49640000000001
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2893,
+        "end_frame": 2992,
+        "start_time": 96.52976666666667,
+        "end_time": 99.83306666666667
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 2993,
+        "end_frame": 3040,
+        "start_time": 99.86643333333333,
+        "end_time": 101.43466666666667
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 3041,
+        "end_frame": 3149,
+        "start_time": 101.46803333333334,
+        "end_time": 105.07163333333334
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 3150,
+        "end_frame": 3278,
+        "start_time": 105.105,
+        "end_time": 109.37593333333334
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 3279,
+        "end_frame": 3417,
+        "start_time": 109.4093,
+        "end_time": 114.0139
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 3418,
+        "end_frame": 3525,
+        "start_time": 114.04726666666667,
+        "end_time": 117.6175
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 3526,
+        "end_frame": 3641,
+        "start_time": 117.65086666666667,
+        "end_time": 121.48803333333333
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 3642,
+        "end_frame": 3803,
+        "start_time": 121.5214,
+        "end_time": 126.89343333333333
+      },
+      {
+        "label": "verbos",
+        "class": "verbos",
+        "class_id": 18,
+        "start_frame": 3804,
+        "end_frame": 3953,
+        "start_time": 126.9268,
+        "end_time": 131.89843333333334
+      }
+    ]
+  },
+  {
+    "video_id": "SUSTANTIVOS",
+    "video_path": "SUSTANTIVOS.mp4",
+    "duration": 113.04626666666667,
+    "fps": 29.97002997002997,
+    "total_frames": 3388,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 0,
+        "end_frame": 71,
+        "start_time": 0.0,
+        "end_time": 2.3690333333333333
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 72,
+        "end_frame": 251,
+        "start_time": 2.4024,
+        "end_time": 8.375033333333333
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 252,
+        "end_frame": 360,
+        "start_time": 8.4084,
+        "end_time": 12.012
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 361,
+        "end_frame": 485,
+        "start_time": 12.045366666666666,
+        "end_time": 16.182833333333335
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 486,
+        "end_frame": 589,
+        "start_time": 16.2162,
+        "end_time": 19.652966666666668
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 590,
+        "end_frame": 620,
+        "start_time": 19.686333333333334,
+        "end_time": 20.687333333333335
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 621,
+        "end_frame": 727,
+        "start_time": 20.7207,
+        "end_time": 24.257566666666666
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 728,
+        "end_frame": 824,
+        "start_time": 24.290933333333335,
+        "end_time": 27.494133333333334
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 825,
+        "end_frame": 908,
+        "start_time": 27.5275,
+        "end_time": 30.296933333333335
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 909,
+        "end_frame": 999,
+        "start_time": 30.3303,
+        "end_time": 33.3333
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1000,
+        "end_frame": 1032,
+        "start_time": 33.36666666666667,
+        "end_time": 34.434400000000004
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1033,
+        "end_frame": 1113,
+        "start_time": 34.46776666666667,
+        "end_time": 37.137100000000004
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1114,
+        "end_frame": 1204,
+        "start_time": 37.17046666666667,
+        "end_time": 40.17346666666667
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1205,
+        "end_frame": 1294,
+        "start_time": 40.206833333333336,
+        "end_time": 43.17646666666667
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1295,
+        "end_frame": 1433,
+        "start_time": 43.209833333333336,
+        "end_time": 47.814433333333334
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1434,
+        "end_frame": 1541,
+        "start_time": 47.8478,
+        "end_time": 51.418033333333334
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1542,
+        "end_frame": 1650,
+        "start_time": 51.4514,
+        "end_time": 55.055
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1651,
+        "end_frame": 1752,
+        "start_time": 55.088366666666666,
+        "end_time": 58.458400000000005
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1753,
+        "end_frame": 1879,
+        "start_time": 58.49176666666667,
+        "end_time": 62.69596666666667
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1880,
+        "end_frame": 1982,
+        "start_time": 62.72933333333334,
+        "end_time": 66.13273333333333
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 1983,
+        "end_frame": 2132,
+        "start_time": 66.1661,
+        "end_time": 71.13773333333333
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2133,
+        "end_frame": 2259,
+        "start_time": 71.1711,
+        "end_time": 75.3753
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2260,
+        "end_frame": 2362,
+        "start_time": 75.40866666666666,
+        "end_time": 78.81206666666667
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2363,
+        "end_frame": 2523,
+        "start_time": 78.84543333333333,
+        "end_time": 84.1841
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2524,
+        "end_frame": 2685,
+        "start_time": 84.21746666666667,
+        "end_time": 89.5895
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2686,
+        "end_frame": 2780,
+        "start_time": 89.62286666666667,
+        "end_time": 92.75933333333333
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2781,
+        "end_frame": 2814,
+        "start_time": 92.7927,
+        "end_time": 93.8938
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2815,
+        "end_frame": 2928,
+        "start_time": 93.92716666666666,
+        "end_time": 97.69760000000001
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 2929,
+        "end_frame": 3079,
+        "start_time": 97.73096666666667,
+        "end_time": 102.73596666666667
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 3080,
+        "end_frame": 3236,
+        "start_time": 102.76933333333334,
+        "end_time": 107.97453333333334
+      },
+      {
+        "label": "sustantivos",
+        "class": "sustantivos",
+        "class_id": 16,
+        "start_frame": 3237,
+        "end_frame": 3387,
+        "start_time": 108.0079,
+        "end_time": 113.0129
+      }
+    ]
+  },
+  {
+    "video_id": "PREGUNTAS",
+    "video_path": "PREGUNTAS.mp4",
+    "duration": 57.190466666666666,
+    "fps": 29.97002997002997,
+    "total_frames": 1714,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 0,
+        "end_frame": 75,
+        "start_time": 0.0,
+        "end_time": 2.5025
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 76,
+        "end_frame": 251,
+        "start_time": 2.5358666666666667,
+        "end_time": 8.375033333333333
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 252,
+        "end_frame": 360,
+        "start_time": 8.4084,
+        "end_time": 12.012
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 361,
+        "end_frame": 450,
+        "start_time": 12.045366666666666,
+        "end_time": 15.015
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 451,
+        "end_frame": 480,
+        "start_time": 15.048366666666666,
+        "end_time": 16.016000000000002
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 481,
+        "end_frame": 552,
+        "start_time": 16.049366666666668,
+        "end_time": 18.418400000000002
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 553,
+        "end_frame": 589,
+        "start_time": 18.451766666666668,
+        "end_time": 19.652966666666668
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 590,
+        "end_frame": 656,
+        "start_time": 19.686333333333334,
+        "end_time": 21.888533333333335
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 657,
+        "end_frame": 757,
+        "start_time": 21.9219,
+        "end_time": 25.258566666666667
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 758,
+        "end_frame": 848,
+        "start_time": 25.291933333333333,
+        "end_time": 28.294933333333333
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 849,
+        "end_frame": 878,
+        "start_time": 28.328300000000002,
+        "end_time": 29.295933333333334
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 879,
+        "end_frame": 963,
+        "start_time": 29.3293,
+        "end_time": 32.1321
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 964,
+        "end_frame": 1041,
+        "start_time": 32.16546666666667,
+        "end_time": 34.734700000000004
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 1042,
+        "end_frame": 1131,
+        "start_time": 34.76806666666667,
+        "end_time": 37.737700000000004
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 1132,
+        "end_frame": 1246,
+        "start_time": 37.77106666666667,
+        "end_time": 41.574866666666665
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 1247,
+        "end_frame": 1342,
+        "start_time": 41.60823333333333,
+        "end_time": 44.77806666666667
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 1343,
+        "end_frame": 1406,
+        "start_time": 44.81143333333333,
+        "end_time": 46.91353333333333
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 1407,
+        "end_frame": 1562,
+        "start_time": 46.9469,
+        "end_time": 52.11873333333333
+      },
+      {
+        "label": "preguntas",
+        "class": "preguntas",
+        "class_id": 13,
+        "start_frame": 1563,
+        "end_frame": 1713,
+        "start_time": 52.152100000000004,
+        "end_time": 57.1571
+      }
+    ]
+  },
+  {
+    "video_id": "ANIMALES",
+    "video_path": "ANIMALES.mp4",
+    "duration": 89.089,
+    "fps": 29.97002997002997,
+    "total_frames": 2670,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 0,
+        "end_frame": 362,
+        "start_time": 0.0,
+        "end_time": 12.078733333333334
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 363,
+        "end_frame": 492,
+        "start_time": 12.1121,
+        "end_time": 16.4164
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 493,
+        "end_frame": 565,
+        "start_time": 16.449766666666665,
+        "end_time": 18.852166666666665
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 566,
+        "end_frame": 662,
+        "start_time": 18.885533333333335,
+        "end_time": 22.088733333333334
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 663,
+        "end_frame": 770,
+        "start_time": 22.1221,
+        "end_time": 25.692333333333334
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 771,
+        "end_frame": 884,
+        "start_time": 25.7257,
+        "end_time": 29.496133333333333
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 885,
+        "end_frame": 1011,
+        "start_time": 29.529500000000002,
+        "end_time": 33.7337
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1012,
+        "end_frame": 1125,
+        "start_time": 33.767066666666665,
+        "end_time": 37.5375
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1126,
+        "end_frame": 1238,
+        "start_time": 37.57086666666667,
+        "end_time": 41.30793333333333
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1239,
+        "end_frame": 1342,
+        "start_time": 41.341300000000004,
+        "end_time": 44.77806666666667
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1343,
+        "end_frame": 1445,
+        "start_time": 44.81143333333333,
+        "end_time": 48.21483333333333
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1446,
+        "end_frame": 1553,
+        "start_time": 48.248200000000004,
+        "end_time": 51.81843333333333
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1554,
+        "end_frame": 1656,
+        "start_time": 51.851800000000004,
+        "end_time": 55.2552
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1657,
+        "end_frame": 1770,
+        "start_time": 55.28856666666667,
+        "end_time": 59.059000000000005
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1771,
+        "end_frame": 1873,
+        "start_time": 59.09236666666667,
+        "end_time": 62.49576666666667
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 1874,
+        "end_frame": 2011,
+        "start_time": 62.529133333333334,
+        "end_time": 67.10036666666667
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 2012,
+        "end_frame": 2148,
+        "start_time": 67.13373333333334,
+        "end_time": 71.6716
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 2149,
+        "end_frame": 2265,
+        "start_time": 71.70496666666666,
+        "end_time": 75.5755
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 2266,
+        "end_frame": 2362,
+        "start_time": 75.60886666666667,
+        "end_time": 78.81206666666667
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 2363,
+        "end_frame": 2518,
+        "start_time": 78.84543333333333,
+        "end_time": 84.01726666666667
+      },
+      {
+        "label": "animales",
+        "class": "animales",
+        "class_id": 2,
+        "start_frame": 2519,
+        "end_frame": 2669,
+        "start_time": 84.05063333333334,
+        "end_time": 89.05563333333333
+      }
+    ]
+  },
+  {
+    "video_id": "LUGARES",
+    "video_path": "LUGARES.mp4",
+    "duration": 85.08500000000001,
+    "fps": 29.97002997002997,
+    "total_frames": 2550,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 361,
+        "end_frame": 522,
+        "start_time": 12.045366666666666,
+        "end_time": 17.4174
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 523,
+        "end_frame": 556,
+        "start_time": 17.450766666666667,
+        "end_time": 18.551866666666665
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 557,
+        "end_frame": 661,
+        "start_time": 18.585233333333335,
+        "end_time": 22.055366666666668
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 662,
+        "end_frame": 788,
+        "start_time": 22.088733333333334,
+        "end_time": 26.292933333333334
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 789,
+        "end_frame": 939,
+        "start_time": 26.3263,
+        "end_time": 31.3313
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 940,
+        "end_frame": 1047,
+        "start_time": 31.36466666666667,
+        "end_time": 34.9349
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1048,
+        "end_frame": 1176,
+        "start_time": 34.968266666666665,
+        "end_time": 39.239200000000004
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1177,
+        "end_frame": 1209,
+        "start_time": 39.27256666666667,
+        "end_time": 40.3403
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1210,
+        "end_frame": 1318,
+        "start_time": 40.373666666666665,
+        "end_time": 43.977266666666665
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1319,
+        "end_frame": 1487,
+        "start_time": 44.01063333333333,
+        "end_time": 49.616233333333334
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1488,
+        "end_frame": 1583,
+        "start_time": 49.6496,
+        "end_time": 52.819433333333336
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1584,
+        "end_frame": 1614,
+        "start_time": 52.8528,
+        "end_time": 53.8538
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1615,
+        "end_frame": 1746,
+        "start_time": 53.887166666666666,
+        "end_time": 58.2582
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1747,
+        "end_frame": 1786,
+        "start_time": 58.29156666666667,
+        "end_time": 59.592866666666666
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1787,
+        "end_frame": 1861,
+        "start_time": 59.62623333333333,
+        "end_time": 62.09536666666667
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1862,
+        "end_frame": 1903,
+        "start_time": 62.12873333333334,
+        "end_time": 63.496766666666666
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 1904,
+        "end_frame": 2042,
+        "start_time": 63.53013333333333,
+        "end_time": 68.13473333333333
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 2043,
+        "end_frame": 2150,
+        "start_time": 68.1681,
+        "end_time": 71.73833333333333
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 2151,
+        "end_frame": 2246,
+        "start_time": 71.7717,
+        "end_time": 74.94153333333334
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 2247,
+        "end_frame": 2398,
+        "start_time": 74.9749,
+        "end_time": 80.01326666666667
+      },
+      {
+        "label": "lugares",
+        "class": "lugares",
+        "class_id": 9,
+        "start_frame": 2399,
+        "end_frame": 2549,
+        "start_time": 80.04663333333333,
+        "end_time": 85.05163333333333
+      }
+    ]
+  },
+  {
+    "video_id": "DIAS DE LA SEMANA",
+    "video_path": "DIAS DE LA SEMANA.mp4",
+    "duration": 48.782066666666665,
+    "fps": 29.97002997002997,
+    "total_frames": 1462,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 0,
+        "end_frame": 361,
+        "start_time": 0.0,
+        "end_time": 12.045366666666666
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 362,
+        "end_frame": 510,
+        "start_time": 12.078733333333334,
+        "end_time": 17.017
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 511,
+        "end_frame": 580,
+        "start_time": 17.050366666666665,
+        "end_time": 19.352666666666668
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 581,
+        "end_frame": 680,
+        "start_time": 19.386033333333334,
+        "end_time": 22.689333333333334
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 681,
+        "end_frame": 789,
+        "start_time": 22.7227,
+        "end_time": 26.3263
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 790,
+        "end_frame": 879,
+        "start_time": 26.359666666666666,
+        "end_time": 29.3293
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 880,
+        "end_frame": 962,
+        "start_time": 29.362666666666666,
+        "end_time": 32.098733333333335
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 963,
+        "end_frame": 994,
+        "start_time": 32.1321,
+        "end_time": 33.166466666666665
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 995,
+        "end_frame": 1060,
+        "start_time": 33.19983333333333,
+        "end_time": 35.36866666666667
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 1061,
+        "end_frame": 1156,
+        "start_time": 35.402033333333335,
+        "end_time": 38.571866666666665
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 1157,
+        "end_frame": 1310,
+        "start_time": 38.60523333333333,
+        "end_time": 43.71033333333333
+      },
+      {
+        "label": "dias_de_la_semana",
+        "class": "dias_de_la_semana",
+        "class_id": 20,
+        "start_frame": 1311,
+        "end_frame": 1461,
+        "start_time": 43.743700000000004,
+        "end_time": 48.7487
+      }
+    ]
+  }
+]

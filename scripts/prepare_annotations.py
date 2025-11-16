@@ -348,10 +348,10 @@ def main(args):
     
     for video_file in video_files:
         # Buscar directorio de segmentos correspondiente
-        # Ej: COLORES.mp4 → COLORES/
+        # Ej: COLORES.mp4 → COLORES_senas/
         video_name = video_file.stem
-        segments_dir = segments_base / video_name
-        
+        segments_dir = segments_base / f"{video_name}_senas"
+
         if not segments_dir.exists():
             logger.warning(f"No se encontró directorio de segmentos: {segments_dir}")
             continue
@@ -410,7 +410,10 @@ def main(args):
     logger.info(f"Total señas: {total_signs}")
     logger.info(f"Duración total: {total_duration / 60:.1f} minutos")
     logger.info(f"Clases únicas: {len(class_mapping)}")
-    logger.info(f"Promedio señas/video: {total_signs / len(all_annotations):.1f}")
+    if len(all_annotations) > 0:
+        logger.info(f"Promedio señas/video: {total_signs / len(all_annotations):.1f}")
+    else:
+        logger.info("Promedio señas/video: N/A (no hay videos procesados)")
     
     # Distribución por clase
     class_counts = defaultdict(int)

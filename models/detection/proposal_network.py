@@ -33,8 +33,8 @@ class FeaturePyramid(nn.Module):
         
         # Lateral connections (1x1 conv para reducir canales)
         self.lateral_convs = nn.ModuleList([
-            nn.Conv1d(in_channels, out_channels, kernel_size=1)
-            for _ in range(num_levels)
+            nn.Conv1d(in_channels if i == 0 else out_channels, out_channels, kernel_size=1)
+            for i in range(num_levels)
         ])
         
         # Output convs (3x1 conv para refinar)
@@ -163,8 +163,8 @@ class ProposalGenerator(nn.Module):
         batch_proposals = []
         
         for b in range(batch_size):
-            start_p = start_probs[b, 0].cpu().numpy()
-            end_p = end_probs[b, 0].cpu().numpy()
+            start_p = start_probs[b, 0].detach().cpu().numpy()
+            end_p = end_probs[b, 0].detach().cpu().numpy()
             
             proposals = []
             

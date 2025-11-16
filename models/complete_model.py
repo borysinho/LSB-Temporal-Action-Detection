@@ -46,40 +46,41 @@ class TemporalActionDetector(nn.Module):
         
         # 2. Temporal Proposal Network
         self.proposal_net = TemporalProposalNetwork(
-            in_channels=config['model']['feature_dim'],
-            hidden_channels=config['model']['detection']['proposal_hidden_dim'],
-            num_pyramid_levels=config['model']['detection']['num_pyramid_levels'],
-            proposal_lengths=config['detection']['proposal_lengths'],
-            min_score=config['detection']['min_proposal_score'],
-            max_proposals=config['detection']['max_proposals_per_video']
+            in_channels=config['model']['backbone_config']['feature_dim'],
+            hidden_channels=config['model']['detection']['hidden_dim'],
+            num_pyramid_levels=config['model']['detection'].get('num_pyramid_levels', 3),
+            proposal_lengths=config['model']['detection']['proposal_lengths'],
+            min_score=config['model']['detection'].get('min_proposal_score', 0.1),
+            max_proposals=config['model']['detection']['num_proposals']
         )
         
         # 3. Boundary Detector
         use_enhanced = config['model']['detection'].get('use_enhanced_boundary', True)
         if use_enhanced:
             self.boundary_detector = EnhancedBoundaryDetector(
-                in_channels=config['model']['feature_dim'],
-                hidden_channels=config['model']['detection']['boundary_hidden_dim'],
-                use_temporal_context=True
+                in_channels=config['model']['backbone_config']['feature_dim'],
+                hidden_channels=config['model']['detection']['hidden_dim'],
+                num_conv_layers=config['model']['boundary']['num_layers'],
+                kernel_sizes=[config['model']['boundary']['kernel_size']]
             )
         else:
             self.boundary_detector = BoundaryDetector(
-                in_channels=config['model']['feature_dim'],
-                hidden_channels=config['model']['detection']['boundary_hidden_dim']
+                in_channels=config['model']['backbone_config']['feature_dim'],
+                hidden_channels=config['model']['detection']['hidden_dim']
             )
         
-        # 4. Action Classifier
+        # 4. Classification Head
         self.classifier = ActionClassifier(
-            in_channels=config['model']['feature_dim'],
-            hidden_channels=config['model']['detection']['classifier_hidden_dim'],
+            in_channels=config['model']['backbone_config']['feature_dim'],
+            hidden_channels=config['model']['classifier']['hidden_dim'],
             num_classes=self.num_classes,
-            use_attention=config['model']['detection']['use_attention'],
-            dropout=config['training']['dropout']
+            use_attention=config['model']['detection'].get('use_attention', True),
+            dropout=config['model']['classifier']['dropout']
         )
         
         # Post-processing config
-        self.nms_threshold = config['detection']['nms_iou_threshold']
-        self.confidence_threshold = config['detection']['confidence_threshold']
+        self.nms_threshold = config['model']['detection'].get('nms_iou_threshold', 0.5)
+        self.confidence_threshold = config['model']['detection'].get('confidence_threshold', 0.5)
     
     def _build_backbone(self, config: Dict) -> nn.Module:
         """Construye el backbone según configuración"""
@@ -371,18 +372,20 @@ class TemporalActionDetector(nn.Module):
         return result
 
 
-def build_model(config_path: str) -> TemporalActionDetector:
+def build_model(config) -> TemporalActionDetector:
     """
-    Construye modelo desde archivo de configuración
+    Construye modelo desde configuración
     
     Args:
-        config_path: Ruta a config.yaml
+        config: Dict de configuración o ruta a config.yaml
     
     Returns:
         model: TemporalActionDetector
     """
-    with open(config_path, 'r') as f:
-        config = yaml.safe_load(f)
+    # Si config es un string, cargarlo desde archivo
+    if isinstance(config, str):
+        with open(config, 'r') as f:
+            config = yaml.safe_load(f)
     
     model = TemporalActionDetector(config)
     

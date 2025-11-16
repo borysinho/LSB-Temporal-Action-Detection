@@ -1,0 +1,721 @@
+[
+  {
+    "video_id": "MEDIOS DE TRANSPORTE",
+    "video_path": "MEDIOS DE TRANSPORTE.mp4",
+    "duration": 66.29956666666666,
+    "fps": 29.97002997002997,
+    "total_frames": 1987,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 361,
+        "end_frame": 469,
+        "start_time": 12.045366666666666,
+        "end_time": 15.648966666666666
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 470,
+        "end_frame": 504,
+        "start_time": 15.682333333333334,
+        "end_time": 16.8168
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 505,
+        "end_frame": 595,
+        "start_time": 16.850166666666667,
+        "end_time": 19.853166666666667
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 596,
+        "end_frame": 684,
+        "start_time": 19.886533333333333,
+        "end_time": 22.8228
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 685,
+        "end_frame": 806,
+        "start_time": 22.856166666666667,
+        "end_time": 26.893533333333334
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 807,
+        "end_frame": 896,
+        "start_time": 26.9269,
+        "end_time": 29.896533333333334
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 897,
+        "end_frame": 991,
+        "start_time": 29.9299,
+        "end_time": 33.06636666666667
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 992,
+        "end_frame": 1029,
+        "start_time": 33.09973333333333,
+        "end_time": 34.3343
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1030,
+        "end_frame": 1096,
+        "start_time": 34.367666666666665,
+        "end_time": 36.56986666666667
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1097,
+        "end_frame": 1142,
+        "start_time": 36.603233333333336,
+        "end_time": 38.104733333333336
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1143,
+        "end_frame": 1210,
+        "start_time": 38.1381,
+        "end_time": 40.373666666666665
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1211,
+        "end_frame": 1246,
+        "start_time": 40.40703333333333,
+        "end_time": 41.574866666666665
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1247,
+        "end_frame": 1318,
+        "start_time": 41.60823333333333,
+        "end_time": 43.977266666666665
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1319,
+        "end_frame": 1357,
+        "start_time": 44.01063333333333,
+        "end_time": 45.27856666666667
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1358,
+        "end_frame": 1430,
+        "start_time": 45.311933333333336,
+        "end_time": 47.714333333333336
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1431,
+        "end_frame": 1481,
+        "start_time": 47.7477,
+        "end_time": 49.41603333333333
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1482,
+        "end_frame": 1554,
+        "start_time": 49.449400000000004,
+        "end_time": 51.851800000000004
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1555,
+        "end_frame": 1584,
+        "start_time": 51.88516666666667,
+        "end_time": 52.8528
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1585,
+        "end_frame": 1681,
+        "start_time": 52.88616666666667,
+        "end_time": 56.08936666666667
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1682,
+        "end_frame": 1835,
+        "start_time": 56.122733333333336,
+        "end_time": 61.227833333333336
+      },
+      {
+        "label": "medios_de_transporte",
+        "class": "medios_de_transporte",
+        "class_id": 10,
+        "start_frame": 1836,
+        "end_frame": 1986,
+        "start_time": 61.2612,
+        "end_time": 66.2662
+      }
+    ]
+  },
+  {
+    "video_id": "PRONOMBRES",
+    "video_path": "PRONOMBRES.mp4",
+    "duration": 74.24083333333334,
+    "fps": 29.97002997002997,
+    "total_frames": 2225,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 0,
+        "end_frame": 71,
+        "start_time": 0.0,
+        "end_time": 2.3690333333333333
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 72,
+        "end_frame": 251,
+        "start_time": 2.4024,
+        "end_time": 8.375033333333333
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 252,
+        "end_frame": 360,
+        "start_time": 8.4084,
+        "end_time": 12.012
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 361,
+        "end_frame": 480,
+        "start_time": 12.045366666666666,
+        "end_time": 16.016000000000002
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 481,
+        "end_frame": 583,
+        "start_time": 16.049366666666668,
+        "end_time": 19.452766666666665
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 584,
+        "end_frame": 691,
+        "start_time": 19.486133333333335,
+        "end_time": 23.056366666666666
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 692,
+        "end_frame": 827,
+        "start_time": 23.089733333333335,
+        "end_time": 27.594233333333335
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 828,
+        "end_frame": 926,
+        "start_time": 27.6276,
+        "end_time": 30.897533333333335
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 927,
+        "end_frame": 1036,
+        "start_time": 30.9309,
+        "end_time": 34.56786666666667
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1037,
+        "end_frame": 1066,
+        "start_time": 34.60123333333333,
+        "end_time": 35.568866666666665
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1067,
+        "end_frame": 1159,
+        "start_time": 35.60223333333333,
+        "end_time": 38.67196666666667
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1160,
+        "end_frame": 1192,
+        "start_time": 38.705333333333336,
+        "end_time": 39.773066666666665
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1193,
+        "end_frame": 1312,
+        "start_time": 39.80643333333333,
+        "end_time": 43.77706666666667
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1313,
+        "end_frame": 1469,
+        "start_time": 43.810433333333336,
+        "end_time": 49.015633333333334
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1470,
+        "end_frame": 1499,
+        "start_time": 49.049,
+        "end_time": 50.01663333333333
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1500,
+        "end_frame": 1602,
+        "start_time": 50.050000000000004,
+        "end_time": 53.4534
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1603,
+        "end_frame": 1678,
+        "start_time": 53.48676666666667,
+        "end_time": 55.989266666666666
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1679,
+        "end_frame": 1709,
+        "start_time": 56.02263333333333,
+        "end_time": 57.023633333333336
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1710,
+        "end_frame": 1825,
+        "start_time": 57.057,
+        "end_time": 60.89416666666667
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1826,
+        "end_frame": 1921,
+        "start_time": 60.927533333333336,
+        "end_time": 64.09736666666667
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 1922,
+        "end_frame": 2073,
+        "start_time": 64.13073333333334,
+        "end_time": 69.1691
+      },
+      {
+        "label": "pronombres",
+        "class": "pronombres",
+        "class_id": 14,
+        "start_frame": 2074,
+        "end_frame": 2224,
+        "start_time": 69.20246666666667,
+        "end_time": 74.20746666666666
+      }
+    ]
+  },
+  {
+    "video_id": "VERDURAS",
+    "video_path": "VERDURAS.mp4",
+    "duration": 38.938900000000004,
+    "fps": 29.97002997002997,
+    "total_frames": 1167,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 0,
+        "end_frame": 71,
+        "start_time": 0.0,
+        "end_time": 2.3690333333333333
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 72,
+        "end_frame": 252,
+        "start_time": 2.4024,
+        "end_time": 8.4084
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 253,
+        "end_frame": 360,
+        "start_time": 8.441766666666666,
+        "end_time": 12.012
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 361,
+        "end_frame": 474,
+        "start_time": 12.045366666666666,
+        "end_time": 15.8158
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 475,
+        "end_frame": 589,
+        "start_time": 15.849166666666667,
+        "end_time": 19.652966666666668
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 590,
+        "end_frame": 685,
+        "start_time": 19.686333333333334,
+        "end_time": 22.856166666666667
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 686,
+        "end_frame": 782,
+        "start_time": 22.889533333333333,
+        "end_time": 26.092733333333335
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 783,
+        "end_frame": 861,
+        "start_time": 26.1261,
+        "end_time": 28.7287
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 862,
+        "end_frame": 1016,
+        "start_time": 28.762066666666666,
+        "end_time": 33.900533333333335
+      },
+      {
+        "label": "verduras",
+        "class": "verduras",
+        "class_id": 19,
+        "start_frame": 1017,
+        "end_frame": 1166,
+        "start_time": 33.9339,
+        "end_time": 38.90553333333333
+      }
+    ]
+  },
+  {
+    "video_id": "DESPARTAMENTOS DE BOLIVIA",
+    "video_path": "DESPARTAMENTOS DE BOLIVIA.mp4",
+    "duration": 70.80406666666667,
+    "fps": 29.97002997002997,
+    "total_frames": 2122,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 361,
+        "end_frame": 531,
+        "start_time": 12.045366666666666,
+        "end_time": 17.7177
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 532,
+        "end_frame": 581,
+        "start_time": 17.751066666666667,
+        "end_time": 19.386033333333334
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 582,
+        "end_frame": 685,
+        "start_time": 19.4194,
+        "end_time": 22.856166666666667
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 686,
+        "end_frame": 806,
+        "start_time": 22.889533333333333,
+        "end_time": 26.893533333333334
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 807,
+        "end_frame": 842,
+        "start_time": 26.9269,
+        "end_time": 28.094733333333334
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 843,
+        "end_frame": 917,
+        "start_time": 28.1281,
+        "end_time": 30.597233333333335
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 918,
+        "end_frame": 963,
+        "start_time": 30.6306,
+        "end_time": 32.1321
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 964,
+        "end_frame": 1059,
+        "start_time": 32.16546666666667,
+        "end_time": 35.335300000000004
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1060,
+        "end_frame": 1144,
+        "start_time": 35.36866666666667,
+        "end_time": 38.17146666666667
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1145,
+        "end_frame": 1179,
+        "start_time": 38.20483333333333,
+        "end_time": 39.3393
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1180,
+        "end_frame": 1310,
+        "start_time": 39.37266666666667,
+        "end_time": 43.71033333333333
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1311,
+        "end_frame": 1432,
+        "start_time": 43.743700000000004,
+        "end_time": 47.78106666666667
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1433,
+        "end_frame": 1485,
+        "start_time": 47.814433333333334,
+        "end_time": 49.5495
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1486,
+        "end_frame": 1582,
+        "start_time": 49.58286666666667,
+        "end_time": 52.78606666666667
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1583,
+        "end_frame": 1619,
+        "start_time": 52.819433333333336,
+        "end_time": 54.020633333333336
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1620,
+        "end_frame": 1684,
+        "start_time": 54.054,
+        "end_time": 56.18946666666667
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1685,
+        "end_frame": 1716,
+        "start_time": 56.222833333333334,
+        "end_time": 57.257200000000005
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1717,
+        "end_frame": 1814,
+        "start_time": 57.29056666666667,
+        "end_time": 60.52713333333333
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1815,
+        "end_frame": 1970,
+        "start_time": 60.5605,
+        "end_time": 65.73233333333333
+      },
+      {
+        "label": "despartamentos_de_bolivia",
+        "class": "despartamentos_de_bolivia",
+        "class_id": 6,
+        "start_frame": 1971,
+        "end_frame": 2121,
+        "start_time": 65.7657,
+        "end_time": 70.7707
+      }
+    ]
+  }
+]

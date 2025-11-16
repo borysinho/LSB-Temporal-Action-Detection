@@ -1,0 +1,800 @@
+[
+  {
+    "video_id": "COLORES",
+    "video_path": "COLORES.mp4",
+    "duration": 69.03563333333334,
+    "fps": 29.97002997002997,
+    "total_frames": 2069,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 361,
+        "end_frame": 472,
+        "start_time": 12.045366666666666,
+        "end_time": 15.749066666666668
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 473,
+        "end_frame": 508,
+        "start_time": 15.782433333333334,
+        "end_time": 16.950266666666668
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 509,
+        "end_frame": 571,
+        "start_time": 16.983633333333334,
+        "end_time": 19.052366666666668
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 572,
+        "end_frame": 628,
+        "start_time": 19.085733333333334,
+        "end_time": 20.954266666666665
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 629,
+        "end_frame": 709,
+        "start_time": 20.987633333333335,
+        "end_time": 23.656966666666666
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 710,
+        "end_frame": 800,
+        "start_time": 23.690333333333335,
+        "end_time": 26.693333333333335
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 801,
+        "end_frame": 836,
+        "start_time": 26.7267,
+        "end_time": 27.894533333333335
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 837,
+        "end_frame": 956,
+        "start_time": 27.9279,
+        "end_time": 31.898533333333333
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 957,
+        "end_frame": 1051,
+        "start_time": 31.9319,
+        "end_time": 35.06836666666667
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1052,
+        "end_frame": 1089,
+        "start_time": 35.101733333333335,
+        "end_time": 36.3363
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1090,
+        "end_frame": 1186,
+        "start_time": 36.36966666666667,
+        "end_time": 39.57286666666667
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1187,
+        "end_frame": 1288,
+        "start_time": 39.606233333333336,
+        "end_time": 42.97626666666667
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1289,
+        "end_frame": 1318,
+        "start_time": 43.00963333333333,
+        "end_time": 43.977266666666665
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1319,
+        "end_frame": 1348,
+        "start_time": 44.01063333333333,
+        "end_time": 44.97826666666667
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1349,
+        "end_frame": 1439,
+        "start_time": 45.011633333333336,
+        "end_time": 48.014633333333336
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1440,
+        "end_frame": 1553,
+        "start_time": 48.048,
+        "end_time": 51.81843333333333
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1554,
+        "end_frame": 1662,
+        "start_time": 51.851800000000004,
+        "end_time": 55.455400000000004
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1663,
+        "end_frame": 1765,
+        "start_time": 55.48876666666667,
+        "end_time": 58.89216666666667
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1766,
+        "end_frame": 1918,
+        "start_time": 58.925533333333334,
+        "end_time": 63.99726666666667
+      },
+      {
+        "label": "colores",
+        "class": "colores",
+        "class_id": 4,
+        "start_frame": 1919,
+        "end_frame": 2068,
+        "start_time": 64.03063333333334,
+        "end_time": 69.00226666666667
+      }
+    ]
+  },
+  {
+    "video_id": "NUMEROS 1 AL 50",
+    "video_path": "NUMEROS 1 AL 50.mp4",
+    "duration": 135.135,
+    "fps": 29.97002997002997,
+    "total_frames": 4050,
+    "width": 1280,
+    "height": 720,
+    "annotations": [
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 0,
+        "end_frame": 71,
+        "start_time": 0.0,
+        "end_time": 2.3690333333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 72,
+        "end_frame": 251,
+        "start_time": 2.4024,
+        "end_time": 8.375033333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 252,
+        "end_frame": 360,
+        "start_time": 8.4084,
+        "end_time": 12.012
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 361,
+        "end_frame": 558,
+        "start_time": 12.045366666666666,
+        "end_time": 18.6186
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 559,
+        "end_frame": 642,
+        "start_time": 18.651966666666667,
+        "end_time": 21.421400000000002
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 643,
+        "end_frame": 731,
+        "start_time": 21.454766666666668,
+        "end_time": 24.391033333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 732,
+        "end_frame": 830,
+        "start_time": 24.424400000000002,
+        "end_time": 27.694333333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 831,
+        "end_frame": 926,
+        "start_time": 27.727700000000002,
+        "end_time": 30.897533333333335
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 927,
+        "end_frame": 1002,
+        "start_time": 30.9309,
+        "end_time": 33.4334
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1003,
+        "end_frame": 1089,
+        "start_time": 33.466766666666665,
+        "end_time": 36.3363
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1090,
+        "end_frame": 1180,
+        "start_time": 36.36966666666667,
+        "end_time": 39.37266666666667
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1181,
+        "end_frame": 1259,
+        "start_time": 39.40603333333333,
+        "end_time": 42.008633333333336
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1260,
+        "end_frame": 1361,
+        "start_time": 42.042,
+        "end_time": 45.41203333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1362,
+        "end_frame": 1475,
+        "start_time": 45.4454,
+        "end_time": 49.215833333333336
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1476,
+        "end_frame": 1562,
+        "start_time": 49.2492,
+        "end_time": 52.11873333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1563,
+        "end_frame": 1656,
+        "start_time": 52.152100000000004,
+        "end_time": 55.2552
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1657,
+        "end_frame": 1686,
+        "start_time": 55.28856666666667,
+        "end_time": 56.2562
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1687,
+        "end_frame": 1774,
+        "start_time": 56.289566666666666,
+        "end_time": 59.19246666666667
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1775,
+        "end_frame": 1861,
+        "start_time": 59.225833333333334,
+        "end_time": 62.09536666666667
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1862,
+        "end_frame": 1976,
+        "start_time": 62.12873333333334,
+        "end_time": 65.93253333333334
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 1977,
+        "end_frame": 2054,
+        "start_time": 65.9659,
+        "end_time": 68.53513333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2055,
+        "end_frame": 2167,
+        "start_time": 68.5685,
+        "end_time": 72.30556666666666
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2168,
+        "end_frame": 2283,
+        "start_time": 72.33893333333333,
+        "end_time": 76.1761
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2284,
+        "end_frame": 2404,
+        "start_time": 76.20946666666667,
+        "end_time": 80.21346666666666
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2405,
+        "end_frame": 2518,
+        "start_time": 80.24683333333333,
+        "end_time": 84.01726666666667
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2519,
+        "end_frame": 2615,
+        "start_time": 84.05063333333334,
+        "end_time": 87.25383333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2616,
+        "end_frame": 2682,
+        "start_time": 87.2872,
+        "end_time": 89.4894
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2683,
+        "end_frame": 2787,
+        "start_time": 89.52276666666667,
+        "end_time": 92.9929
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2788,
+        "end_frame": 2880,
+        "start_time": 93.02626666666667,
+        "end_time": 96.096
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2881,
+        "end_frame": 2965,
+        "start_time": 96.12936666666667,
+        "end_time": 98.93216666666667
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 2966,
+        "end_frame": 3055,
+        "start_time": 98.96553333333334,
+        "end_time": 101.93516666666667
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3056,
+        "end_frame": 3158,
+        "start_time": 101.96853333333334,
+        "end_time": 105.37193333333333
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3159,
+        "end_frame": 3255,
+        "start_time": 105.4053,
+        "end_time": 108.6085
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3256,
+        "end_frame": 3344,
+        "start_time": 108.64186666666667,
+        "end_time": 111.57813333333334
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3345,
+        "end_frame": 3468,
+        "start_time": 111.6115,
+        "end_time": 115.71560000000001
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3469,
+        "end_frame": 3555,
+        "start_time": 115.74896666666667,
+        "end_time": 118.6185
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3556,
+        "end_frame": 3658,
+        "start_time": 118.65186666666666,
+        "end_time": 122.05526666666667
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3659,
+        "end_frame": 3736,
+        "start_time": 122.08863333333333,
+        "end_time": 124.65786666666666
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3737,
+        "end_frame": 3898,
+        "start_time": 124.69123333333333,
+        "end_time": 130.06326666666666
+      },
+      {
+        "label": "numeros_1_al_50",
+        "class": "numeros_1_al_50",
+        "class_id": 12,
+        "start_frame": 3899,
+        "end_frame": 4049,
+        "start_time": 130.09663333333333,
+        "end_time": 135.10163333333333
+      }
+    ]
+  },
+  {
+    "video_id": "FAMILIA",
+    "video_path": "FAMILIA.mp4",
+    "duration": 89.6896,
+    "fps": 29.97002997002997,
+    "total_frames": 2688,
+    "width": 600,
+    "height": 480,
+    "annotations": [
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 0,
+        "end_frame": 360,
+        "start_time": 0.0,
+        "end_time": 12.012
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 361,
+        "end_frame": 392,
+        "start_time": 12.045366666666666,
+        "end_time": 13.079733333333333
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 393,
+        "end_frame": 535,
+        "start_time": 13.113100000000001,
+        "end_time": 17.851166666666668
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 536,
+        "end_frame": 637,
+        "start_time": 17.884533333333334,
+        "end_time": 21.254566666666665
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 638,
+        "end_frame": 770,
+        "start_time": 21.287933333333335,
+        "end_time": 25.692333333333334
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 771,
+        "end_frame": 860,
+        "start_time": 25.7257,
+        "end_time": 28.695333333333334
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 861,
+        "end_frame": 890,
+        "start_time": 28.7287,
+        "end_time": 29.696333333333335
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 891,
+        "end_frame": 1017,
+        "start_time": 29.7297,
+        "end_time": 33.9339
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1018,
+        "end_frame": 1162,
+        "start_time": 33.96726666666667,
+        "end_time": 38.77206666666667
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1163,
+        "end_frame": 1306,
+        "start_time": 38.80543333333333,
+        "end_time": 43.57686666666667
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1307,
+        "end_frame": 1457,
+        "start_time": 43.61023333333333,
+        "end_time": 48.615233333333336
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1458,
+        "end_frame": 1590,
+        "start_time": 48.6486,
+        "end_time": 53.053000000000004
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1591,
+        "end_frame": 1631,
+        "start_time": 53.08636666666667,
+        "end_time": 54.421033333333334
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1632,
+        "end_frame": 1714,
+        "start_time": 54.4544,
+        "end_time": 57.190466666666666
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1715,
+        "end_frame": 1746,
+        "start_time": 57.22383333333333,
+        "end_time": 58.2582
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1747,
+        "end_frame": 1787,
+        "start_time": 58.29156666666667,
+        "end_time": 59.62623333333333
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1788,
+        "end_frame": 1921,
+        "start_time": 59.6596,
+        "end_time": 64.09736666666667
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 1922,
+        "end_frame": 2078,
+        "start_time": 64.13073333333334,
+        "end_time": 69.33593333333333
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 2079,
+        "end_frame": 2119,
+        "start_time": 69.3693,
+        "end_time": 70.70396666666667
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 2120,
+        "end_frame": 2229,
+        "start_time": 70.73733333333334,
+        "end_time": 74.3743
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 2230,
+        "end_frame": 2262,
+        "start_time": 74.40766666666667,
+        "end_time": 75.47540000000001
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 2263,
+        "end_frame": 2378,
+        "start_time": 75.50876666666667,
+        "end_time": 79.34593333333333
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 2379,
+        "end_frame": 2537,
+        "start_time": 79.3793,
+        "end_time": 84.65123333333334
+      },
+      {
+        "label": "familia",
+        "class": "familia",
+        "class_id": 7,
+        "start_frame": 2538,
+        "end_frame": 2687,
+        "start_time": 84.6846,
+        "end_time": 89.65623333333333
+      }
+    ]
+  }
+]

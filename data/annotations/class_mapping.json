@@ -1,0 +1,23 @@
+{
+  "abecedario": 0,
+  "alimentos": 1,
+  "animales": 2,
+  "calendario": 3,
+  "colores": 4,
+  "cuerpo_humano": 5,
+  "despartamentos_de_bolivia": 6,
+  "familia": 7,
+  "frutas": 8,
+  "lugares": 9,
+  "medios_de_transporte": 10,
+  "naturaleza": 11,
+  "numeros_1_al_50": 12,
+  "preguntas": 13,
+  "pronombres": 14,
+  "saludos": 15,
+  "sustantivos": 16,
+  "tiempo": 17,
+  "verbos": 18,
+  "verduras": 19,
+  "dias_de_la_semana": 20
+}

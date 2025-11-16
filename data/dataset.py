@@ -207,7 +207,12 @@ class TemporalActionDataset(Dataset):
         
         # Aplicar transformaciones
         if self.transform is not None:
-            frames = self.transform(frames)
+            if hasattr(self.transform, '__call__'):
+                result = self.transform(frames)
+                if isinstance(result, tuple):
+                    frames, _ = result  # Desempaquetar si devuelve (frames, annotations)
+                else:
+                    frames = result
         
         # Convertir a tensor (T, H, W, C) -> (C, T, H, W)
         if not isinstance(frames, torch.Tensor):
@@ -303,14 +308,24 @@ class TemporalActionDataset(Dataset):
         if self.sampling_rate > 1:
             frames = frames[::self.sampling_rate]
         
-        # Asegurar que tengamos el número correcto de frames
-        # Si sampling_rate reduce el número, ajustar
-        while len(frames) < self.clip_length:
-            frames.append(frames[-1].copy())
+        # Asegurar que tengamos exactamente clip_length frames
+        if len(frames) < self.clip_length:
+            # Padding
+            while len(frames) < self.clip_length:
+                frames.append(frames[-1].copy())
+        else:
+            # Cropping
+            frames = frames[:self.clip_length]
         
-        frames = frames[:self.clip_length]
+        # Redimensionar frames a tamaño consistente
+        resized_frames = []
+        target_height, target_width = 224, 224  # Usar tamaño del config
         
-        frames = np.stack(frames, axis=0)  # (T, H, W, C)
+        for frame in frames:
+            resized_frame = cv2.resize(frame, (target_width, target_height), interpolation=cv2.INTER_LINEAR)
+            resized_frames.append(resized_frame)
+        
+        frames = np.stack(resized_frames, axis=0)  # (T, H, W, C)
         
         return frames
     
@@ -341,7 +356,7 @@ def collate_fn(batch):
     
     Returns:
         batched_frames: Tensor (B, C, T, H, W)
-        batched_targets: Lista de targets (no se puede batchear por tamaños variables)
+        batched_targets: Dict con targets batcheados y padding
     """
     frames_list = []
     targets_list = []
@@ -350,10 +365,61 @@ def collate_fn(batch):
         frames_list.append(frames)
         targets_list.append(targets)
     
-    # Stack frames
-    batched_frames = torch.stack(frames_list, dim=0)
+    # Encontrar la longitud máxima temporal
+    max_temporal_len = max(f.shape[1] for f in frames_list)  # frames ya están en (C, T, H, W)
     
-    return batched_frames, targets_list
+    # Padding de frames para que todos tengan la misma longitud
+    padded_frames = []
+    for frames in frames_list:
+        c, t, h, w = frames.shape
+        if t < max_temporal_len:
+            # Padding con el último frame
+            padding = frames[:, -1:, :, :].repeat(1, max_temporal_len - t, 1, 1)
+            frames = torch.cat([frames, padding], dim=1)
+        elif t > max_temporal_len:
+            # Cropping
+            frames = frames[:, :max_temporal_len, :, :]
+        padded_frames.append(frames)
+    
+    # Stack frames
+    batched_frames = torch.stack(padded_frames, dim=0)
+    
+    # Encontrar máximo número de anotaciones
+    max_annotations = max(len(targets.get('labels', [])) for targets in targets_list)
+    
+    # Crear targets batcheados con padding
+    batched_targets = {
+        'labels': [],
+        'boundaries': [],
+        'num_annotations': []
+    }
+    
+    for targets in targets_list:
+        labels = targets.get('labels', torch.empty(0, dtype=torch.long))
+        boundaries = targets.get('boundaries', torch.empty((0, 2), dtype=torch.float32))
+        num_ann = len(labels)
+        
+        # Padding
+        if len(labels) < max_annotations:
+            pad_labels = torch.full((max_annotations - len(labels),), -1, dtype=torch.long)
+            labels = torch.cat([labels, pad_labels])
+            
+            pad_boundaries = torch.full((max_annotations - len(boundaries), 2), -1, dtype=torch.float32)
+            boundaries = torch.cat([boundaries, pad_boundaries])
+        
+        batched_targets['labels'].append(labels)
+        batched_targets['boundaries'].append(boundaries)
+        batched_targets['num_annotations'].append(num_ann)
+    
+    # Stack
+    batched_targets['labels'] = torch.stack(batched_targets['labels'])
+    batched_targets['boundaries'] = torch.stack(batched_targets['boundaries'])
+    batched_targets['num_annotations'] = torch.tensor(batched_targets['num_annotations'], dtype=torch.long)
+    
+    return {
+        'frames': batched_frames,
+        'targets': batched_targets
+    }
 
 
 if __name__ == '__main__':

@@ -20,7 +20,7 @@ model:
     feature_dim: 768 # Dimensión de features (768 para Swin-B, 384 para Swin-S)
 
   # Número de clases de señas
-  num_classes: 24 # Ajustar según tu dataset
+  num_classes: 21 # Ajustar según tu dataset
 
   # Configuración de detección temporal
   detection:
@@ -48,14 +48,14 @@ model:
 # ====================
 data:
   # Directorios
-  video_dir: "../5 steps/videos" # Ruta a videos
+  video_dir: "../1 videos originales/1" # Ruta a videos
   annotations_dir: "data/annotations" # Anotaciones temporales
   cache_dir: "data/cache" # Cache de features
 
   # Archivos de anotaciones
-  train_annotations: "data/annotations/train.json"
-  val_annotations: "data/annotations/val.json"
-  test_annotations: "data/annotations/test.json"
+  train_annotations: "data/annotations/annotations_train.json"
+  val_annotations: "data/annotations/annotations_val.json"
+  test_annotations: "data/annotations/annotations_test.json"
 
   # Procesamiento de video
   clip_length: 64 # Número de frames por clip
