@@ -290,38 +290,62 @@ def get_train_transforms(config) -> ComposeTransforms:
     return ComposeTransforms(spatial=spatial, temporal=temporal)
 
 
-def get_val_transforms(config) -> ComposeTransforms:
-    """Crea transformaciones de validación (solo resize y crop central)"""
+class CenterCrop:
+    """Center crop para validación/test"""
+
+    def __init__(self, size: int):
+        self.size = size
+
+    def __call__(self, frames: np.ndarray) -> np.ndarray:
+        T, H, W, C = frames.shape
+        # Resize manteniendo aspect ratio
+        scale = self.size / min(H, W)
+        new_H, new_W = int(H * scale), int(W * scale)
+
+        frames_resized = []
+        for t in range(T):
+            frame_resized = cv2.resize(frames[t], (new_W, new_H), interpolation=cv2.INTER_LINEAR)
+            frames_resized.append(frame_resized)
+        frames = np.stack(frames_resized, axis=0)
+
+        # Center crop
+        T, H, W, C = frames.shape
+        top = (H - self.size) // 2
+        left = (W - self.size) // 2
+        frames = frames[:, top:top+self.size, left:left+self.size, :]
+
+        return frames
+
+
+def get_train_transforms(target_size: Tuple[int, int], augmentation_config: dict):
+    """Obtiene las transformaciones de entrenamiento"""
     
-    class CenterCrop:
-        def __init__(self, size):
-            self.size = size
-        
-        def __call__(self, frames):
-            T, H, W, C = frames.shape
-            # Resize manteniendo aspect ratio
-            scale = self.size / min(H, W)
-            new_H, new_W = int(H * scale), int(W * scale)
-            
-            frames_resized = []
-            for t in range(T):
-                frame_resized = cv2.resize(frames[t], (new_W, new_H), interpolation=cv2.INTER_LINEAR)
-                frames_resized.append(frame_resized)
-            frames = np.stack(frames_resized, axis=0)
-            
-            # Center crop
-            T, H, W, C = frames.shape
-            top = (H - self.size) // 2
-            left = (W - self.size) // 2
-            frames = frames[:, top:top+self.size, left:left+self.size, :]
-            
-            return frames
+    # Spatial augmentations
+    spatial = SpatialAugmentation(
+        crop_size=target_size,
+        scale=augmentation_config.get('spatial', {}).get('random_scale', [0.8, 1.0]),
+        hflip_prob=augmentation_config.get('spatial', {}).get('random_flip', 0.5),
+        color_jitter=augmentation_config.get('spatial', {}).get('color_jitter', {}),
+        rotation_degrees=augmentation_config.get('spatial', {}).get('random_rotation', 10)
+    )
     
-    spatial = CenterCrop(config['data']['input_size'])
+    # Temporal augmentations
+    temporal = TemporalAugmentation(
+        temporal_jitter=augmentation_config.get('temporal', {}).get('temporal_jitter', 0.1),
+        speed_range=tuple(augmentation_config.get('temporal', {}).get('speed_perturbation', [0.9, 1.1])),
+        frame_dropout_prob=augmentation_config.get('temporal', {}).get('frame_dropout', 0.0)
+    )
+    
+    return ComposeTransforms(spatial=spatial, temporal=temporal)
+
+
+def get_val_transforms(target_size: Tuple[int, int]):
+    """Obtiene las transformaciones de validación"""
+    
+    # Solo resize y center crop para validación
+    spatial = CenterCrop(target_size[0])  # Usar el primer valor (altura)
     
     return ComposeTransforms(spatial=spatial, temporal=None)
-
-
 if __name__ == '__main__':
     # Test
     print("Testing Augmentations...")

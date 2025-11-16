@@ -64,23 +64,21 @@ def create_dataloaders(config: dict, args) -> tuple:
     
     # Datasets
     train_dataset = TemporalActionDataset(
-        video_dir=data_config['video_dir'],
-        annotation_file=data_config['train_annotations'],
+        annotations_file=data_config['train_annotations'],
+        videos_root=data_config['video_dir'],
         clip_length=data_config['clip_length'],
         sampling_rate=data_config.get('sampling_rate', 1),
-        split='train',
-        transform=train_transforms,
-        overlap=data_config.get('train_overlap', 0.5)
+        mode='train',
+        transform=train_transforms
     )
     
     val_dataset = TemporalActionDataset(
-        video_dir=data_config['video_dir'],
-        annotation_file=data_config['val_annotations'],
+        annotations_file=data_config['val_annotations'],
+        videos_root=data_config['video_dir'],
         clip_length=data_config['clip_length'],
         sampling_rate=data_config.get('sampling_rate', 1),
-        split='val',
-        transform=val_transforms,
-        overlap=0.0  # No overlap en validación
+        mode='val',
+        transform=val_transforms
     )
     
     logger.info(f"  Train dataset: {len(train_dataset)} clips")

@@ -48,14 +48,20 @@ model:
 # ====================
 data:
   # Directorios
-  videos_dir: "../5 steps/videos" # Ruta a videos
+  video_dir: "../5 steps/videos" # Ruta a videos
   annotations_dir: "data/annotations" # Anotaciones temporales
   cache_dir: "data/cache" # Cache de features
+
+  # Archivos de anotaciones
+  train_annotations: "data/annotations/train.json"
+  val_annotations: "data/annotations/val.json"
+  test_annotations: "data/annotations/test.json"
 
   # Procesamiento de video
   clip_length: 64 # Número de frames por clip
   sampling_rate: 2 # Tomar 1 frame cada N frames
   input_size: 224 # Tamaño de imagen (224x224)
+  target_size: [224, 224] # Tamaño objetivo [altura, ancho]
 
   # Train/Val/Test split
   train_split: 0.7
