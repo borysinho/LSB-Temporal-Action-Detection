@@ -73,6 +73,91 @@ def get_video_info(video_path: str) -> Dict:
     }
 
 
+def process_single_segment(video_path: str, video_info: Dict, video_name: str, class_mapping: Dict) -> Dict:
+    """
+    Procesa un video individual como segmento completo.
+    """
+    logger.info(f"Procesando segmento individual: {video_name}")
+
+    # Extraer información del nombre del archivo
+    start_frame, end_frame = extract_frames_from_filename(video_name)
+
+    # Si no se pudo extraer información de frames, asumir segmento completo
+    if start_frame == 0 and end_frame == 100:  # Valores por defecto
+        start_frame = 0
+        end_frame = video_info['total_frames']
+
+    # Validar frames
+    if end_frame > video_info['total_frames']:
+        end_frame = video_info['total_frames']
+    if start_frame >= end_frame:
+        start_frame = max(0, end_frame - 50)  # Mínimo 50 frames
+
+    # Calcular tiempos
+    start_time = start_frame / video_info['fps'] if video_info['fps'] > 0 else 0
+    end_time = end_frame / video_info['fps'] if video_info['fps'] > 0 else 0
+
+    # Extraer nombre de clase del nombre del archivo
+    # Buscar patrones comunes en nombres de segmentos
+    class_name = extract_class_from_filename(video_name)
+
+    # Asignar ID de clase
+    if class_name not in class_mapping:
+        class_mapping[class_name] = len(class_mapping)
+
+    class_id = class_mapping[class_name]
+
+    annotation = {
+        'label': class_name,
+        'class': class_name,
+        'class_id': class_id,
+        'start_frame': int(start_frame),
+        'end_frame': int(end_frame),
+        'start_time': float(start_time),
+        'end_time': float(end_time)
+    }
+
+    logger.info(f"  ✓ Segmento: frames {start_frame}-{end_frame} (clase: {class_name})")
+
+    # Crear anotación completa
+    video_annotation = {
+        'video_id': video_name,
+        'video_path': str(video_path),
+        'duration': video_info['duration'],
+        'fps': video_info['fps'],
+        'total_frames': video_info['total_frames'],
+        'width': video_info['width'],
+        'height': video_info['height'],
+        'annotations': [annotation]
+    }
+
+    return video_annotation
+
+
+def extract_class_from_filename(filename: str) -> str:
+    """
+    Extrae el nombre de la clase del nombre del archivo.
+    """
+    # Remover extensión
+    name = filename.replace('.mp4', '')
+
+    # Buscar patrones comunes
+    # Ejemplo: "TOMATE_frames_0000-0360" -> "TOMATE"
+    if '_frames_' in name:
+        return name.split('_frames_')[0]
+
+    # Ejemplo: "seña_01_TOMATE" -> "TOMATE"
+    if 'seña_' in name:
+        parts = name.split('_')
+        # Buscar la parte que no es numérica después de "seña_"
+        for part in parts[1:]:
+            if not part.isdigit():
+                return part
+
+    # Fallback: usar el nombre completo
+    return name.lower().replace(' ', '_')
+
+
 def process_video_fast(
     video_path: str,
     segments_dir: str,
@@ -104,38 +189,105 @@ def process_video_fast(
             if mp4_files:
                 segments_candidates.append(subdir)
 
-    if segments_candidates:
-        segments_path = segments_candidates[0]  # Tomar el primero encontrado
-        logger.info(f"Encontrado directorio de segmentos: {segments_path}")
-    else:
-        logger.warning(f"No se encontró directorio de segmentos para: {video_name}")
-        logger.warning(f"Buscado en: {video_parent}")
-        logger.warning(f"Candidatos considerados: {len(segments_candidates)}")
-        return None
+    # Si no se encontraron carpetas de segmentos, tratar el video como segmento individual
+    if not segments_candidates:
+        logger.info(f"No se encontraron carpetas de segmentos. Tratando '{video_name}' como segmento individual.")
+        return process_single_segment(video_path, video_info, video_name, class_mapping)
+
+    segments_path = segments_candidates[0]  # Tomar el primero encontrado
+    logger.info(f"Encontrado directorio de segmentos: {segments_path}")
 
     # Procesar todos los segmentos
     annotations = []
     segment_files = sorted(segments_path.glob("*.mp4"))
 
-    logger.info(f"Encontrados {len(segment_files)} segmentos")
+    logger.info(f"Encontrados {len(segment_files)} segmentos en carpeta")
+
+    # Si la carpeta de segmentos está vacía, buscar videos pre-segmentados con múltiples patrones
+    if len(segment_files) == 0:
+        logger.info(f"Carpeta de segmentos vacía. Buscando videos pre-segmentados...")
+        parent_dir = Path(video_path).parent
+
+        # Patrón 1: nombre_XXX.mp4 (ej: TIEMPO_001.mp4, TIEMPO_002.mp4)
+        segmented_pattern1 = re.compile(rf'^{re.escape(video_name)}_(\d+)\.mp4$')
+        segment_files_p1 = []
+        for file_path in parent_dir.glob(f"{video_name}_*.mp4"):
+            match = segmented_pattern1.match(file_path.name)
+            if match:
+                segment_files_p1.append((int(match.group(1)), file_path))
+
+        # Patrón 2: Buscar cualquier .mp4 en subcarpetas dentro de la carpeta *_senas
+        segment_files_p2 = list(segments_path.rglob("*.mp4"))
+
+        # Patrón 3: Buscar en el directorio padre con patrones más flexibles
+        segment_files_p3 = []
+        for file_path in parent_dir.glob("*.mp4"):
+            if file_path != Path(video_path):  # Excluir el video principal
+                # Verificar si el nombre contiene el nombre base
+                if video_name.lower() in file_path.stem.lower():
+                    segment_files_p3.append(file_path)
+
+        # Usar el patrón que encontró más archivos
+        all_patterns = [
+            (segment_files_p1, "patrón nombre_XXX.mp4"),
+            (segment_files_p2, "subcarpetas en *_senas"),
+            (segment_files_p3, "archivos relacionados")
+        ]
+
+        best_pattern = max(all_patterns, key=lambda x: len(x[0]))
+
+        if best_pattern[0]:
+            if best_pattern[1] == "patrón nombre_XXX.mp4":
+                segment_files = [fp for _, fp in sorted(best_pattern[0])]
+            else:
+                segment_files = best_pattern[0]
+
+            logger.info(f"Encontrados {len(segment_files)} videos pre-segmentados usando {best_pattern[1]}")
+            for sf in segment_files[:3]:  # Mostrar primeros 3
+                logger.info(f"  - {sf.name}")
+        else:
+            logger.warning(f"No se encontraron videos pre-segmentados para {video_name}")
+            # Fallback: tratar el video principal como segmento único
+            return process_single_segment(video_path, video_info, video_name, class_mapping)
 
     for seg_file in segment_files:
         try:
-            # Extraer información del nombre del archivo
-            start_frame, end_frame = extract_frames_from_filename(seg_file.name)
+            # Verificar si estamos procesando videos pre-segmentados (fuera de carpeta *_senas)
+            is_pre_segmented = len(list(segments_path.glob("*.mp4"))) == 0 and seg_file.parent == Path(video_path).parent
 
-            # Validar frames
-            if end_frame > video_info['total_frames']:
-                end_frame = video_info['total_frames']
-            if start_frame >= end_frame:
-                start_frame = max(0, end_frame - 50)  # Mínimo 50 frames
+            if is_pre_segmented:
+                # Procesar como segmento individual completo
+                logger.info(f"Procesando segmento pre-segmentado: {seg_file.name}")
+                segment_info = get_video_info(str(seg_file))
 
-            # Calcular tiempos
-            start_time = start_frame / video_info['fps'] if video_info['fps'] > 0 else 0
-            end_time = end_frame / video_info['fps'] if video_info['fps'] > 0 else 0
+                # Para videos pre-segmentados, usar frames completos del segmento
+                start_frame = 0
+                end_frame = segment_info['total_frames']
 
-            # Nombre de clase (usar nombre del video como clase base)
-            class_name = video_name.lower().replace(' ', '_')
+                # Calcular tiempos
+                start_time = 0
+                end_time = end_frame / segment_info['fps'] if segment_info['fps'] > 0 else 0
+
+                # Nombre de clase (usar nombre base del video)
+                class_name = video_name.lower().replace(' ', '_')
+
+            else:
+                # Procesar segmento tradicional dentro de carpeta *_senas
+                # Extraer información del nombre del archivo
+                start_frame, end_frame = extract_frames_from_filename(seg_file.name)
+
+                # Validar frames
+                if end_frame > video_info['total_frames']:
+                    end_frame = video_info['total_frames']
+                if start_frame >= end_frame:
+                    start_frame = max(0, end_frame - 50)  # Mínimo 50 frames
+
+                # Calcular tiempos
+                start_time = start_frame / video_info['fps'] if video_info['fps'] > 0 else 0
+                end_time = end_frame / video_info['fps'] if video_info['fps'] > 0 else 0
+
+                # Nombre de clase (usar nombre del video como clase base)
+                class_name = video_name.lower().replace(' ', '_')
 
             # Asignar ID de clase
             if class_name not in class_mapping:
@@ -189,21 +341,76 @@ def main(args):
 
     # Encontrar videos recursivamente en subcarpetas
     video_files = list(videos_dir.rglob("*.mp4"))
-    logger.info(f"Encontrados {len(video_files)} videos completos")
+    logger.info(f"Encontrados {len(video_files)} archivos .mp4")
 
-    # Procesar videos
-    all_annotations = []
-    class_mapping = {}
+    # Detectar si todos los videos son segmentos individuales
+    videos_with_segments = 0
+    videos_without_segments = 0
+    total_segment_dirs = 0
+    empty_segment_dirs = 0
 
     for video_file in video_files:
-        annotation = process_video_fast(
-            str(video_file),
-            str(segments_dir),
-            class_mapping
-        )
+        video_name = video_file.stem
+        video_parent = video_file.parent
 
-        if annotation and annotation['annotations']:
-            all_annotations.append(annotation)
+        # Verificar si existe carpeta de segmentos
+        segment_dir = video_parent / f"{video_name}_senas"
+        if segment_dir.exists():
+            total_segment_dirs += 1
+            mp4_files = list(segment_dir.glob("*.mp4"))
+            if mp4_files:
+                videos_with_segments += 1
+            else:
+                empty_segment_dirs += 1
+                videos_without_segments += 1
+        else:
+            videos_without_segments += 1
+
+    logger.info(f"Videos con segmentos tradicionales: {videos_with_segments}")
+    logger.info(f"Videos/carpetas sin segmentos: {videos_without_segments}")
+    logger.info(f"Total carpetas *_senas: {total_segment_dirs}, vacías: {empty_segment_dirs}")
+
+    if videos_with_segments == 0 and videos_without_segments > 0:
+        if total_segment_dirs == 0:
+            logger.info("🎯 DETECTADO: Todos los archivos .mp4 son segmentos individuales (sin carpetas *_senas).")
+        elif empty_segment_dirs == total_segment_dirs:
+            logger.info("🎯 DETECTADO: Todos los archivos .mp4 son segmentos individuales (carpetas *_senas vacías).")
+        else:
+            logger.info("🎯 DETECTADO: Mezcla de videos con y sin segmentos.")
+
+        logger.info("   Procesando como segmentos pre-segmentados...")
+
+        # Procesar todos los .mp4 como segmentos individuales
+        all_annotations = []
+        class_mapping = {}
+
+        for video_file in video_files:
+            annotation = process_single_segment(
+                str(video_file),
+                get_video_info(str(video_file)),
+                video_file.stem,
+                class_mapping
+            )
+            if annotation:
+                all_annotations.append(annotation)
+
+    else:
+        logger.info(f"Encontrados {videos_with_segments} videos con segmentos, {videos_without_segments} sin segmentos")
+        logger.info("   Usando estructura tradicional de carpetas...")
+
+        # Procesar videos tradicionales
+        all_annotations = []
+        class_mapping = {}
+
+        for video_file in video_files:
+            annotation = process_video_fast(
+                str(video_file),
+                str(segments_dir),
+                class_mapping
+            )
+
+            if annotation and annotation['annotations']:
+                all_annotations.append(annotation)
 
     logger.info(f"\n✓ Procesados {len(all_annotations)} videos")
     logger.info(f"✓ Encontradas {len(class_mapping)} clases únicas")
