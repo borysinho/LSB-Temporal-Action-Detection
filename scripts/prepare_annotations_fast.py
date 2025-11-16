@@ -87,11 +87,30 @@ def process_video_fast(
     video_info = get_video_info(video_path)
     video_name = Path(video_path).stem
 
-    # Buscar directorio de segmentos
-    segments_path = Path(segments_dir) / f"{video_name}_senas"
+    # Buscar directorio de segmentos (buscar recursivamente)
+    video_parent = Path(video_path).parent
+    segments_candidates = []
 
-    if not segments_path.exists():
-        logger.warning(f"No se encontró directorio: {segments_path}")
+    # Buscar carpetas con patrón {video_name}_senas
+    segments_candidates.extend(list(video_parent.rglob(f"{video_name}_senas")))
+
+    # Buscar cualquier carpeta que contenga "segmentos" en el nombre
+    segments_candidates.extend(list(video_parent.rglob("*segmentos*")))
+
+    # Buscar carpetas que contengan archivos .mp4 (posibles segmentos)
+    for subdir in video_parent.rglob("*"):
+        if subdir.is_dir() and not str(subdir).endswith('_senas') and 'segmentos' not in str(subdir).lower():
+            mp4_files = list(subdir.glob("*.mp4"))
+            if mp4_files:
+                segments_candidates.append(subdir)
+
+    if segments_candidates:
+        segments_path = segments_candidates[0]  # Tomar el primero encontrado
+        logger.info(f"Encontrado directorio de segmentos: {segments_path}")
+    else:
+        logger.warning(f"No se encontró directorio de segmentos para: {video_name}")
+        logger.warning(f"Buscado en: {video_parent}")
+        logger.warning(f"Candidatos considerados: {len(segments_candidates)}")
         return None
 
     # Procesar todos los segmentos
@@ -168,8 +187,8 @@ def main(args):
     # Crear directorio de salida
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Encontrar videos
-    video_files = list(videos_dir.glob("*.mp4"))
+    # Encontrar videos recursivamente en subcarpetas
+    video_files = list(videos_dir.rglob("*.mp4"))
     logger.info(f"Encontrados {len(video_files)} videos completos")
 
     # Procesar videos
