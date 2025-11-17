@@ -102,14 +102,20 @@ class BoundaryDetectionLoss(nn.Module):
     ) -> Dict[str, torch.Tensor]:
         """
         Args:
-            start_probs: (B, T) probabilidades de inicio
-            end_probs: (B, T) probabilidades de fin
+            start_probs: (B, 1, T) or (B, T) probabilidades de inicio
+            end_probs: (B, 1, T) or (B, T) probabilidades de fin
             start_targets: (B, T) targets binarios de inicio
             end_targets: (B, T) targets binarios de fin
         
         Returns:
             dict con 'start_loss', 'end_loss', 'total'
         """
+        # Handle different input shapes: squeeze if (B, 1, T) -> (B, T)
+        if start_probs.dim() == 3 and start_probs.shape[1] == 1:
+            start_probs = start_probs.squeeze(1)
+        if end_probs.dim() == 3 and end_probs.shape[1] == 1:
+            end_probs = end_probs.squeeze(1)
+        
         # BCE con ponderación
         pos_weight = torch.tensor([self.pos_weight], device=start_probs.device)
         
