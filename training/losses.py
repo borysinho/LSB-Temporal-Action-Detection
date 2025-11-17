@@ -44,6 +44,10 @@ class FocalLoss(nn.Module):
         # Si targets son índices, convertir a one-hot
         if targets.dim() == 1:
             num_classes = inputs.size(1)
+            # Debug: verificar valores de targets
+            print(f"DEBUG FocalLoss: targets min={targets.min().item()}, max={targets.max().item()}, num_classes={num_classes}")
+            # Validar que los targets estén en rango válido
+            targets = torch.clamp(targets, 0, num_classes - 1)
             targets_one_hot = F.one_hot(targets, num_classes).float()
         else:
             targets_one_hot = targets
