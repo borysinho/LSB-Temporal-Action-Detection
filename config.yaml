@@ -69,7 +69,7 @@ data:
   test_split: 0.15
 
   # Data loading
-  num_workers: 8 # Threads para cargar datos
+  num_workers: 2 # Threads para cargar datos
   prefetch_factor: 2
   pin_memory: true # Pin memory para GPU
   persistent_workers: true
