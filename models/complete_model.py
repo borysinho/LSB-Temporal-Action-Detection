@@ -168,11 +168,28 @@ class TemporalActionDetector(nn.Module):
             refined_proposals
         )
         
+        # Stack classifications into batched tensor for loss computation
+        # classifications is List[Tensor(N_i, num_classes)] -> (B, max_N, num_classes)
+        max_proposals = max(len(cls) for cls in classifications)
+        batch_size = len(classifications)
+        num_classes = classifications[0].shape[1] if classifications else self.num_classes
+        
+        # Pad shorter sequences with zeros
+        padded_classifications = []
+        for cls in classifications:
+            if len(cls) < max_proposals:
+                padding = torch.zeros(max_proposals - len(cls), num_classes, device=cls.device)
+                cls = torch.cat([cls, padding], dim=0)
+            padded_classifications.append(cls)
+        
+        # Stack into batch tensor
+        class_logits_batched = torch.stack(padded_classifications, dim=0)  # (B, max_N, num_classes)
+        
         # Preparar output
         if self.training and targets is not None:
             # Modo training: retornar raw outputs para que loss_fn externa los procese
             return {
-                'class_logits': classifications,  # List[Tensor] - logits por batch
+                'class_logits': class_logits_batched,  # (B, max_N, num_classes) tensor batched
                 'start_probs': start_probs_refined,  # (B, T)
                 'end_probs': end_probs_refined,  # (B, T)
                 'proposals': refined_proposals,  # List[Tensor] - proposals por batch
