@@ -378,7 +378,9 @@ class TADLoss(nn.Module):
         
         # Si no hay losses calculadas, devolver loss dummy
         if not any(k.startswith('loss_') and k != 'loss_total' for k in losses.keys()):
-            losses['loss_dummy'] = torch.tensor(1.0, device=next(iter(outputs.values())).device if outputs else 'cpu', requires_grad=True)
+            # Crear loss dummy que permita gradientes
+            dummy_loss = torch.tensor(1.0, device=next(iter(outputs.values())).device if outputs else 'cpu', requires_grad=True)
+            losses['loss_dummy'] = dummy_loss
         
         # Total loss
         total = 0

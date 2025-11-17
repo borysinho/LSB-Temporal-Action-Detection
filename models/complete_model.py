@@ -170,17 +170,15 @@ class TemporalActionDetector(nn.Module):
         
         # Preparar output
         if self.training and targets is not None:
-            # Modo training: calcular losses
-            losses = self.compute_losses(
-                proposals=refined_proposals,
-                classifications=classifications,
-                start_probs=start_probs_refined,
-                end_probs=end_probs_refined,
-                start_offsets=start_offsets,
-                end_offsets=end_offsets,
-                targets=targets
-            )
-            return losses
+            # Modo training: retornar raw outputs para que loss_fn externa los procese
+            return {
+                'class_logits': classifications,  # List[Tensor] - logits por batch
+                'start_probs': start_probs_refined,  # (B, T)
+                'end_probs': end_probs_refined,  # (B, T)
+                'proposals': refined_proposals,  # List[Tensor] - proposals por batch
+                'start_offsets': start_offsets,  # (B, T)
+                'end_offsets': end_offsets  # (B, T)
+            }
         else:
             # Modo inference: retornar detecciones
             detections = self.post_process(
