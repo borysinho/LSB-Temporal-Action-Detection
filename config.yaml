@@ -285,7 +285,7 @@ logging:
 # ====================
 hardware:
   # GPU
-  device: "cuda" # 'cuda', 'cpu', 'cuda:0', 'cuda:1'
+  device: "auto" # 'cuda', 'cpu', 'auto' (auto-detecta CUDA disponible)
   multi_gpu: false # DataParallel
   gpu_ids: [0] # IDs de GPUs a usar
 

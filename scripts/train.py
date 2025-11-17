@@ -247,6 +247,8 @@ def main(args):
     # Device
     if args.device:
         device = args.device
+    elif config.get('device') and config['device'] != 'auto':
+        device = config['device']
     else:
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
     

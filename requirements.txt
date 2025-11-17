@@ -11,42 +11,42 @@
 
 # ===== CORE DEEP LEARNING =====
 # PyTorch (instalar manualmente con CUDA)
-# torch>=2.0.0
-# torchvision>=0.15.0
-# torchaudio>=2.0.0
+torch==2.1.0+cu121
+torchvision==0.16.0+cu121
+torchaudio==2.1.0+cu121
 
 # Transformers y modelos pre-entrenados
-transformers>=4.30.0
-timm>=0.9.0  # PyTorch Image Models (incluye Video Swin)
-einops>=0.6.1  # Operaciones tensoriales elegantes
+transformers==4.35.0
+timm==0.9.12  # PyTorch Image Models (incluye Video Swin)
+einops==0.7.0  # Operaciones tensoriales elegantes
 
 # ===== COMPUTER VISION =====
-opencv-python>=4.8.0
-opencv-contrib-python>=4.8.0
-Pillow>=10.0.0
-albumentations>=1.3.1  # Augmentations avanzadas
-imgaug>=0.4.0
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+Pillow==10.1.0
+albumentations==1.3.1  # Augmentations avanzadas
+imgaug==0.4.0
 
 # ===== DATA SCIENCE & PROCESSING =====
-numpy>=1.24.0
-pandas>=2.0.0
-scikit-learn>=1.3.0
-scipy>=1.11.0
+numpy==1.24.3
+pandas==2.1.3
+scikit-learn==1.3.2
+scipy==1.11.4
 
 # ===== VISUALIZATION =====
-matplotlib>=3.7.0
-seaborn>=0.12.0
-plotly>=5.15.0  # Visualizaciones interactivas
-tensorboard>=2.13.0
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.17.0  # Visualizaciones interactivas
+tensorboard==2.15.1
 
 # ===== VIDEO PROCESSING =====
-av>=10.0.0  # PyAV para lectura eficiente de video
-decord>=0.6.0  # Lectura rápida de video
-moviepy>=1.0.3  # Edición de video
+av==11.0.0  # PyAV para lectura eficiente de video
+decord==0.6.0  # Lectura rápida de video
+moviepy==1.0.3  # Edición de video
 
 # ===== METRICS & EVALUATION =====
-scikit-video>=1.1.11  # Métricas de video
-torchmetrics>=1.0.0  # Métricas modernas PyTorch
+scikit-video==1.1.11  # Métricas de video
+torchmetrics==1.2.0  # Métricas modernas PyTorch
 
 # ===== CONFIGURATION & LOGGING =====
 pyyaml>=6.0
