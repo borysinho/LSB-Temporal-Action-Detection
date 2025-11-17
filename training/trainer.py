@@ -144,7 +144,7 @@ class TADTrainer:
             
             # Forward pass con autocast si usamos AMP
             if self.use_amp:
-                with autocast():
+                with autocast(device_type='cuda'):
                     outputs = self.model(frames, targets=targets)
                     
                     # Check if model already computed losses (training mode)
@@ -235,7 +235,7 @@ class TADTrainer:
                 
                 # Forward pass
                 if self.use_amp:
-                    with autocast():
+                    with autocast(device_type='cuda'):
                         outputs = self.model(frames, targets=targets)
                         losses = self.loss_fn(outputs, targets)
                 else:
