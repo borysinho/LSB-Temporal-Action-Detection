@@ -418,8 +418,8 @@ def collate_fn(batch):
     
     # Crear start_targets y end_targets para boundary detection
     # Los targets deben estar en la resolución del backbone (después de reducción temporal)
-    # Para Video Swin Tiny: reducción temporal total = 16x
-    backbone_temporal_reduction = 16
+    # Para Video Swin Tiny: reducción temporal total ≈ 12.8x (64 -> 5 posiciones)
+    backbone_temporal_reduction = 12  # 64 // 12 = 5
     temporal_targets_len = max_temporal_len // backbone_temporal_reduction
     
     start_targets_list = []
