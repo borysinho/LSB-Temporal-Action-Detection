@@ -16,7 +16,7 @@ import time
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
-from torch.cuda.amp import GradScaler, autocast
+from torch.amp import GradScaler, autocast
 from typing import Dict, Optional, Callable, List
 from pathlib import Path
 import logging
@@ -82,7 +82,7 @@ class TADTrainer:
         self.log_dir.mkdir(parents=True, exist_ok=True)
         
         # Mixed precision
-        self.scaler = GradScaler() if self.use_amp else None
+        self.scaler = GradScaler('cuda') if self.use_amp else None
         
         # Métricas
         self.train_metrics = DetectionMetrics(num_classes)
@@ -144,7 +144,7 @@ class TADTrainer:
             
             # Forward pass con autocast si usamos AMP
             if self.use_amp:
-                with autocast():
+                with autocast('cuda'):
                     outputs = self.model(frames, targets=targets)
                     losses = self.loss_fn(outputs, targets)
                     loss = losses['loss_total'] / self.gradient_accumulation_steps
