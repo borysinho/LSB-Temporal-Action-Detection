@@ -116,7 +116,7 @@ training:
   # Configuración básica
   epochs: 100
   batch_size: 2 # Ajustar según VRAM
-  gradient_accumulation_steps: 1 # Simular batch más grande
+  gradient_accumulation_steps: 4 # Simular batch más grande
 
   # Optimizer
   optimizer: "adamw" # 'adam', 'adamw', 'sgd'
