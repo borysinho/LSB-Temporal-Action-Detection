@@ -179,7 +179,7 @@ def create_scheduler(optimizer, config: dict, args):
     training_config = config['training']
     scheduler_type = training_config.get('scheduler', 'cosine')
     
-    num_epochs = args.epochs if args.epochs else training_config['num_epochs']
+    num_epochs = args.epochs if args.epochs else training_config['epochs']
     
     if scheduler_type == 'cosine':
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
