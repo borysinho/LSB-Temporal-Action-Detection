@@ -146,12 +146,26 @@ class TADTrainer:
             if self.use_amp:
                 with autocast():
                     outputs = self.model(frames, targets=targets)
-                    losses = self.loss_fn(outputs, targets)
-                    loss = losses['loss_total'] / self.gradient_accumulation_steps
+                    
+                    # Check if model already computed losses (training mode)
+                    if isinstance(outputs, dict) and 'total_loss' in outputs:
+                        losses = outputs
+                        loss = losses['total_loss'] / self.gradient_accumulation_steps
+                    else:
+                        # Model returned raw outputs, compute losses externally
+                        losses = self.loss_fn(outputs, targets)
+                        loss = losses['loss_total'] / self.gradient_accumulation_steps
             else:
                 outputs = self.model(frames, targets=targets)
-                losses = self.loss_fn(outputs, targets)
-                loss = losses['loss_total'] / self.gradient_accumulation_steps
+                
+                # Check if model already computed losses (training mode)
+                if isinstance(outputs, dict) and 'total_loss' in outputs:
+                    losses = outputs
+                    loss = losses['total_loss'] / self.gradient_accumulation_steps
+                else:
+                    # Model returned raw outputs, compute losses externally
+                    losses = self.loss_fn(outputs, targets)
+                    loss = losses['loss_total'] / self.gradient_accumulation_steps
             
             # Backward pass
             if self.use_amp:

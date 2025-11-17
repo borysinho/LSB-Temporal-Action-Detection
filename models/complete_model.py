@@ -221,7 +221,7 @@ class TemporalActionDetector(nn.Module):
             'loss_classification': total_loss * 0.0,
             'loss_boundary': total_loss * 0.0,
             'loss_regression': total_loss * 0.0,
-            'total_loss': total_loss
+            'loss_total': total_loss
         }
         
         return losses
