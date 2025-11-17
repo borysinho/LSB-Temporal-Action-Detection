@@ -12,7 +12,7 @@ Este módulo implementa:
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from typing import Dict, Optional
+from typing import Dict, Optional, List
 
 
 class FocalLoss(nn.Module):
@@ -397,36 +397,54 @@ class TADLoss(nn.Module):
         self,
         class_logits: torch.Tensor,
         labels: torch.Tensor,
-        proposals: Optional[torch.Tensor],
+        proposals: Optional[List[torch.Tensor]],
         segments: Optional[torch.Tensor]
     ) -> torch.Tensor:
         """
         Computa classification loss matcheando propuestas con GT.
+        Ahora class_logits es batched: (B, max_proposals, num_classes)
+        proposals es List[Tensor] con diferentes longitudes por batch
         """
         if proposals is None or segments is None:
             # Fallback: tratar todas las propuestas como positivas
-            # Esto es simplificado, en práctica necesitamos matching
-            B, num_proposals, num_classes = class_logits.shape
-            # Usar primer label para todas las propuestas (simplificación)
-            targets = labels[:, 0].unsqueeze(1).expand(B, num_proposals)
-            loss = self.focal_loss(class_logits.view(-1, num_classes), 
-                                  targets.reshape(-1))
-            return loss
+            # Para batched format, necesitamos manejar el padding
+            B, max_proposals, num_classes = class_logits.shape
+            
+            total_loss = 0
+            for b in range(B):
+                # Solo usar propuestas reales para este batch
+                num_real_proposals = len(proposals[b]) if proposals else max_proposals
+                batch_logits = class_logits[b, :num_real_proposals]  # (num_real, num_classes)
+                
+                # Usar primer label para todas las propuestas (simplificación)
+                if len(labels[b]) > 0:
+                    target = labels[b][0].unsqueeze(0).expand(num_real_proposals)
+                    loss = self.focal_loss(batch_logits, target)
+                    total_loss += loss
+            
+            return total_loss / B if B > 0 else torch.tensor(0.0, device=class_logits.device)
         
-        # Matching basado en IoU
+        # Matching basado en IoU - actualizar para batched format
         B = class_logits.size(0)
         total_loss = 0
         
         for b in range(B):
-            prop_b = proposals[b]  # (num_proposals, 2)
+            # Usar solo propuestas reales para este batch
+            num_real_proposals = len(proposals[b])
+            batch_logits = class_logits[b, :num_real_proposals]  # (num_real, num_classes)
+            prop_b = proposals[b]  # (num_real, 2)
+            
             seg_b = segments[b]  # (max_actions, 2)
             label_b = labels[b]  # (max_actions,)
             
+            if num_real_proposals == 0:
+                continue
+                
             # Calcular IoU entre propuestas y GT
-            ious = self._compute_pairwise_iou(prop_b, seg_b)  # (num_proposals, max_actions)
+            ious = self._compute_pairwise_iou(prop_b, seg_b)  # (num_real, max_actions)
             
             # Para cada propuesta, encontrar GT con mayor IoU
-            max_iou, matched_gt = ious.max(dim=1)  # (num_proposals,)
+            max_iou, matched_gt = ious.max(dim=1)  # (num_real,)
             
             # Asignar labels: si IoU > 0.5 → label del GT, sino background (0)
             prop_labels = torch.where(
@@ -436,26 +454,30 @@ class TADLoss(nn.Module):
             )
             
             # Focal loss
-            loss = self.focal_loss(class_logits[b], prop_labels)
+            loss = self.focal_loss(batch_logits, prop_labels)
             total_loss += loss
         
-        return total_loss / B
+        return total_loss / B if B > 0 else torch.tensor(0.0, device=class_logits.device)
     
     def _compute_iou_loss(
         self,
-        proposals: torch.Tensor,
+        proposals: List[torch.Tensor],
         segments: torch.Tensor
     ) -> torch.Tensor:
         """
         Computa IoU loss entre propuestas positivas y sus GT matched.
+        proposals es List[Tensor] con diferentes longitudes por batch
         """
-        B = proposals.size(0)
+        B = len(proposals)
         total_loss = 0
         num_positives = 0
         
         for b in range(B):
             prop_b = proposals[b]  # (num_proposals, 2)
             seg_b = segments[b]  # (max_actions, 2)
+            
+            if len(prop_b) == 0:
+                continue
             
             # Calcular IoU
             ious = self._compute_pairwise_iou(prop_b, seg_b)
@@ -474,7 +496,7 @@ class TADLoss(nn.Module):
         if num_positives > 0:
             return total_loss / num_positives
         else:
-            return torch.tensor(0.0, device=proposals.device)
+            return torch.tensor(0.0, device=segments.device)
     
     def _compute_regression_loss(
         self,
