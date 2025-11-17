@@ -116,6 +116,20 @@ class BoundaryDetectionLoss(nn.Module):
         if end_probs.dim() == 3 and end_probs.shape[1] == 1:
             end_probs = end_probs.squeeze(1)
         
+        # Ensure targets and probs have the same temporal dimension
+        # Truncate the longer one to match the shorter one
+        min_temporal_len = min(start_probs.shape[1], start_targets.shape[1])
+        if start_probs.shape[1] > min_temporal_len:
+            start_probs = start_probs[:, :min_temporal_len]
+        if start_targets.shape[1] > min_temporal_len:
+            start_targets = start_targets[:, :min_temporal_len]
+        
+        min_temporal_len = min(end_probs.shape[1], end_targets.shape[1])
+        if end_probs.shape[1] > min_temporal_len:
+            end_probs = end_probs[:, :min_temporal_len]
+        if end_targets.shape[1] > min_temporal_len:
+            end_targets = end_targets[:, :min_temporal_len]
+        
         # BCE con ponderación
         pos_weight = torch.tensor([self.pos_weight], device=start_probs.device)
         
