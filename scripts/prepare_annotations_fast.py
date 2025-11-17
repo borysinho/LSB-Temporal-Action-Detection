@@ -73,7 +73,7 @@ def get_video_info(video_path: str) -> Dict:
     }
 
 
-def process_single_segment(video_path: str, video_info: Dict, video_name: str, class_mapping: Dict) -> Dict:
+def process_single_segment(video_path: str, video_info: Dict, video_name: str, class_mapping: Dict, videos_dir: str) -> Dict:
     """
     Procesa un video individual como segmento completo.
     """
@@ -161,7 +161,8 @@ def extract_class_from_filename(filename: str) -> str:
 def process_video_fast(
     video_path: str,
     segments_dir: str,
-    class_mapping: Dict[str, int]
+    class_mapping: Dict[str, int],
+    videos_dir: str
 ) -> Dict:
     """
     Procesa un video usando información de nombres de archivos (rápido).
@@ -192,7 +193,7 @@ def process_video_fast(
     # Si no se encontraron carpetas de segmentos, tratar el video como segmento individual
     if not segments_candidates:
         logger.info(f"No se encontraron carpetas de segmentos. Tratando '{video_name}' como segmento individual.")
-        return process_single_segment(video_path, video_info, video_name, class_mapping)
+        return process_single_segment(video_path, video_info, video_name, class_mapping, videos_dir)
 
     segments_path = segments_candidates[0]  # Tomar el primero encontrado
     logger.info(f"Encontrado directorio de segmentos: {segments_path}")
@@ -312,10 +313,18 @@ def process_video_fast(
             logger.error(f"  ✗ Error procesando {seg_file.name}: {e}")
             continue
 
-    # Crear anotación completa
+    # Crear ruta relativa al directorio de videos
+    video_path_obj = Path(video_path)
+    videos_dir_obj = Path(videos_dir)
+    try:
+        relative_path = str(video_path_obj.relative_to(videos_dir_obj))
+    except ValueError:
+        # Si no se puede hacer relativa, usar el path absoluto
+        relative_path = str(video_path_obj)
+    
     video_annotation = {
-        'video_id': video_name,  # Agregar ID único del video
-        'video_path': str(video_path),
+        'video_id': video_name,
+        'video_path': relative_path,  # Usar ruta relativa
         'duration': video_info['duration'],
         'fps': video_info['fps'],
         'total_frames': video_info['total_frames'],
@@ -389,7 +398,8 @@ def main(args):
                 str(video_file),
                 get_video_info(str(video_file)),
                 video_file.stem,
-                class_mapping
+                class_mapping,
+                str(videos_dir)
             )
             if annotation:
                 all_annotations.append(annotation)
@@ -406,7 +416,8 @@ def main(args):
             annotation = process_video_fast(
                 str(video_file),
                 str(segments_dir),
-                class_mapping
+                class_mapping,
+                str(videos_dir)
             )
 
             if annotation and annotation['annotations']:
