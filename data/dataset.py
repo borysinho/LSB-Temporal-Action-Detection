@@ -416,6 +416,27 @@ def collate_fn(batch):
     batched_targets['boundaries'] = torch.stack(batched_targets['boundaries'])
     batched_targets['num_annotations'] = torch.tensor(batched_targets['num_annotations'], dtype=torch.long)
     
+    # Crear start_targets y end_targets para boundary detection
+    start_targets_list = []
+    end_targets_list = []
+    
+    for boundaries in batched_targets['boundaries']:
+        start_targets = torch.zeros(max_temporal_len, dtype=torch.float32)
+        end_targets = torch.zeros(max_temporal_len, dtype=torch.float32)
+        
+        for boundary in boundaries:
+            start_pos, end_pos = boundary
+            if start_pos >= 0 and start_pos < max_temporal_len:
+                start_targets[int(start_pos)] = 1.0
+            if end_pos >= 0 and end_pos < max_temporal_len:
+                end_targets[int(end_pos)] = 1.0
+        
+        start_targets_list.append(start_targets)
+        end_targets_list.append(end_targets)
+    
+    batched_targets['start_targets'] = torch.stack(start_targets_list)
+    batched_targets['end_targets'] = torch.stack(end_targets_list)
+    
     return {
         'frames': batched_frames,
         'targets': batched_targets
