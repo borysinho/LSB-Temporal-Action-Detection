@@ -11,9 +11,9 @@
 
 # ===== CORE DEEP LEARNING =====
 # PyTorch (instalar manualmente con CUDA)
-torch==2.4.1+cu121
-torchvision==0.19.1+cu121
-torchaudio==2.4.1+cu121
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
 
 # Transformers y modelos pre-entrenados
 transformers==4.44.0
