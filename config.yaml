@@ -115,7 +115,7 @@ augmentation:
 training:
   # Configuración básica
   epochs: 100
-  batch_size: 8 # Ajustar según VRAM
+  batch_size: 2 # Ajustar según VRAM
   gradient_accumulation_steps: 1 # Simular batch más grande
 
   # Optimizer
