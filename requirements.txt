@@ -28,16 +28,16 @@ albumentations==1.4.15  # Augmentations avanzadas
 imgaug==0.4.0
 
 # ===== DATA SCIENCE & PROCESSING =====
-numpy==1.26.4
+numpy==2.0.2
 pandas==2.2.2
-scikit-learn==1.5.1
+scikit-learn==1.6.0
 scipy==1.14.0
 
 # ===== VISUALIZATION =====
 matplotlib==3.9.2
 seaborn==0.13.2
 plotly==5.24.1  # Visualizaciones interactivas
-tensorboard==2.17.1
+tensorboard==2.19.0
 
 # ===== VIDEO PROCESSING =====
 av==12.1.0  # PyAV para lectura eficiente de video
