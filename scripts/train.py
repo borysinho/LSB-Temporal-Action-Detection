@@ -294,7 +294,7 @@ def main(args):
         trainer.load_checkpoint(args.resume)
     
     # Entrenar
-    num_epochs = args.epochs if args.epochs else training_config['num_epochs']
+    num_epochs = args.epochs if args.epochs else training_config['epochs']
     early_stopping = training_config.get('early_stopping_patience', 10)
     
     logger.info("=" * 60)
