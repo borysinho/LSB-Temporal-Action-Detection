@@ -417,19 +417,29 @@ def collate_fn(batch):
     batched_targets['num_annotations'] = torch.tensor(batched_targets['num_annotations'], dtype=torch.long)
     
     # Crear start_targets y end_targets para boundary detection
+    # Los targets deben estar en la resolución del backbone (después de reducción temporal)
+    # Para Video Swin Tiny: reducción temporal total = 16x
+    backbone_temporal_reduction = 16
+    temporal_targets_len = max_temporal_len // backbone_temporal_reduction
+    
     start_targets_list = []
     end_targets_list = []
     
     for boundaries in batched_targets['boundaries']:
-        start_targets = torch.zeros(max_temporal_len, dtype=torch.float32)
-        end_targets = torch.zeros(max_temporal_len, dtype=torch.float32)
+        start_targets = torch.zeros(temporal_targets_len, dtype=torch.float32)
+        end_targets = torch.zeros(temporal_targets_len, dtype=torch.float32)
         
         for boundary in boundaries:
             start_pos, end_pos = boundary
-            if start_pos >= 0 and start_pos < max_temporal_len:
-                start_targets[int(start_pos)] = 1.0
-            if end_pos >= 0 and end_pos < max_temporal_len:
-                end_targets[int(end_pos)] = 1.0
+            if start_pos >= 0 and end_pos >= 0:
+                # Escalar posiciones a resolución del backbone
+                start_pos_scaled = int(start_pos / backbone_temporal_reduction)
+                end_pos_scaled = int(end_pos / backbone_temporal_reduction)
+                
+                if start_pos_scaled < temporal_targets_len:
+                    start_targets[start_pos_scaled] = 1.0
+                if end_pos_scaled < temporal_targets_len:
+                    end_targets[end_pos_scaled] = 1.0
         
         start_targets_list.append(start_targets)
         end_targets_list.append(end_targets)
